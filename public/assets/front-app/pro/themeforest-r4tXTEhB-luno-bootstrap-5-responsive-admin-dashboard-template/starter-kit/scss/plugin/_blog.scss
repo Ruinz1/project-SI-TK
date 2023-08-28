@@ -1,0 +1,36 @@
+// Admin Layout (LUNO)
+// @author: WrapTheme ( https://themeforest.net/user/wrraptheme )
+// @design by: ThemeMakker Infotech LLP.
+// @event-namespace: LUNO
+// Copyright 2022 WrapTheme
+
+.thumb-overlay{
+    &::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        background: -webkit-linear-gradient(top,transparent 50%,rgba(0,0,0,.8));
+        background: -webkit-gradient(linear,left top,left bottom,color-stop(50%,transparent),to(rgba(0,0,0,.8)));
+        background: linear-gradient( 180deg,transparent 50%,rgba(0,0,0,.8));
+        transition: all .4s ease;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+    }
+    .content-overlay{
+        z-index: 2;
+    }
+}
+
+.blog-app{
+    .dropify-wrapper{
+        height: 120px;
+        .dropify-message p{
+            font-size: 1rem;
+        }
+    }
+}

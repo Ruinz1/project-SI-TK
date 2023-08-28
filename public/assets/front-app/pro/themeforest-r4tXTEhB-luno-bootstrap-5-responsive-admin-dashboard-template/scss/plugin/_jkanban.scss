@@ -1,0 +1,104 @@
+// Admin Layout (LUNO)
+// @author: WrapTheme ( https://themeforest.net/user/wrraptheme )
+// @design by: ThemeMakker Infotech LLP.
+// @event-namespace: LUNO
+// Copyright 2022 WrapTheme
+
+.kanban-container{
+    //width: 100% !important;
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+
+    > div{
+        background: var(--card-color);
+        border: 1px dashed var(--border-color);
+        border-radius: .75rem;
+        flex: 1 0 !important;
+        overflow: hidden;
+        margin-right: 10px !important;
+
+        &:last-child{
+            margin-right: 0 !important;
+        }
+    }
+
+    .kanban-drag{
+        padding: 15px;
+        .kanban-item{
+            border: 1px dashed var(--border-color);
+            background: var(--body-color);
+            border-radius: .75rem;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.jkanban_color{
+    [data-order="1"]{
+        border-color: var(--chart-color1);
+        .kanban-title-board{
+            color: var(--chart-color1);
+        }
+        .kanban-item{
+            background: rgba(var(--primary-rgb),.1);
+        }
+    }
+    [data-order="2"]{
+        border-color: var(--bs-warning);
+        .kanban-title-board{
+            color: var(--bs-warning);
+        }
+        .kanban-item{
+            background: rgba(var(--bs-warning-rgb),.1);
+        }
+    }
+    [data-order="3"]{
+        border-color: var(--bs-success);
+        .kanban-title-board{
+            color: var(--bs-success);
+        }
+        .kanban-item{
+            background: rgba(var(--bs-success-rgb),.1);
+        }
+    }
+}
+.jkanban_advanced{
+    overflow-x: auto;
+    padding-bottom: 10px;
+    [data-id="todo"]{
+        border-color: var(--chart-color1);
+        background: var(--body-color);
+        .kanban-board-header{
+            background: var(--chart-color1);
+            color: $white;
+        }
+        .kanban-item{
+            background: var(--card-color);
+        }
+    }
+    [data-id="working"]{
+        border-color: var(--bs-warning);
+        background: var(--body-color);
+        .kanban-board-header{
+            background: var(--bs-warning);
+            color: $white;
+        }
+        .kanban-item{
+            background: var(--card-color);
+        }
+    }
+    [data-id="done"]{
+        border-color: var(--bs-success);
+        background: var(--body-color);
+        .kanban-board-header{
+            background: var(--bs-success);
+            color: $white;
+        }
+        .kanban-item{
+            background: var(--card-color);
+        }
+    }
+}

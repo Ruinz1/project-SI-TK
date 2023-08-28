@@ -1,0 +1,838 @@
+<!doctype html>
+<html class="no-js " lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Bootstrap 5 admin template and web Application ui kit.">
+    <meta name="keyword" content="LUNO, Bootstrap 5, ReactJs, Angular, Laravel, VueJs, ASP .Net, Admin Dashboard, Admin Theme, HRMS, Projects">
+    <title>:: LUNO :: Documentation</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon-->
+
+    <!-- project css file  -->
+    <link rel="stylesheet" href="../dist/assets/css/luno.style.min.css">
+
+    <!-- Prism css file please do not add in your project -->
+    <link rel="stylesheet" href="../dist/assets/plugin/prismjs/prism.css">
+    <style>
+        .layout-1 .document.sidebar{width: 260px;}
+        .layout-1 .document.sidebar .title-text{flex-direction: row;}
+        .layout-1 .document.sidebar .menu-list{border: 0; padding: 0;}
+        .layout-1 .document.sidebar .menu-list li{border: 0;}
+        .layout-1 .document.sidebar .menu-list .m-link{padding: 4px 0;}
+        .layout-1 .document.sidebar .menu-list .m-link>i{text-align: left;margin: 0; width: 20px;}
+    </style>
+</head>
+
+<body class="layout-1" data-luno="theme-blue">
+
+    <!-- sidebar -->
+    <div class="sidebar px-xl-4 px-3 py-2 py-md-3 document dark">
+        <!-- sidebar: title-->
+        <div class="title-text d-flex align-items-center mb-4 mt-1">
+            <h4 class="sidebar-title mb-0 flex-grow-1"><span class="sm-txt">L</span><span>UNO</span></h4>
+        </div>
+        <!-- sidebar: menu list -->
+        <div class="main-menu flex-grow-1">
+            <!-- sidebar: Documentation -->
+            <ul class="menu-list">
+                <li class="divider py-2 lh-sm"><span class="text-primary small fw-bold text-uppercase">Documentation</span><br><small class="text-muted">Getting Started</small></li>
+                <li><a class="m-link" href="index.html"><i class="fa fa-angle-right"></i>Overview</a></li>
+                <li><a class="m-link" href="doc-setup.html"><i class="fa fa-angle-right"></i>Dev Setup</a></li>
+                <li><a class="m-link" href="doc-structure.html"><i class="fa fa-angle-right"></i>File Structure</a></li>
+                <li><a class="m-link" href="doc-references.html"><i class="fa fa-angle-right"></i>References</a></li>
+                <li><a class="m-link" href="doc-helperclass.html"><i class="fa fa-angle-right"></i>Helper Class</a></li>
+                <li><a class="m-link" href="doc-staterpage.html"><i class="fa fa-angle-right"></i>Stater Page</a></li>
+                <li><a class="m-link" href="doc-animation.html"><i class="fa fa-angle-right"></i>Animation</a></li>
+                <li><a class="m-link" href="doc-changelog.html"><i class="fa fa-angle-right"></i>Changelog<span id="Changelog"></span></a></li>
+            </ul>
+            <!-- sidebar: Widget -->
+            <ul class="menu-list">
+                <li class="divider py-2 lh-sm"><span class="text-primary small fw-bold text-uppercase">Widget Card's</span><br><small class="text-muted">Handcrafted Cards</small></li>
+                <li><a class="m-link" href="w-cards.html"><i class="fa fa-angle-right"></i><span>Basic Card</span></a></li>
+                <li><a class="m-link" href="w-cards-tiles.html"><i class="fa fa-angle-right"></i><span>Card Tiles</span></a></li>
+                <li><a class="m-link" href="w-cards-user.html"><i class="fa fa-angle-right"></i><span>User's Card</span></a></li>
+                <li><a class="m-link" href="w-cards-tabbed.html"><i class="fa fa-angle-right"></i><span>Tabbed Card</span></a></li>
+                <li><a class="m-link" href="w-cards-ribbons.html"><i class="fa fa-angle-right"></i><span>Card Ribbons</span></a></li>
+                <li><a class="m-link" href="w-cards-list.html"><i class="fa fa-angle-right"></i><span>Card List</span></a></li>
+                <li><a class="m-link" href="w-cards-charts.html"><i class="fa fa-angle-right"></i><span>Chart Widget</span></a></li>
+            </ul>
+            <!-- sidebar: Charts -->
+            <ul class="menu-list">
+                <li class="divider py-2 lh-sm"><span class="text-primary small fw-bold text-uppercase">Charts</span><br><small class="text-muted">Getting Started</small></li>
+                <li><a class="m-link" href="chart-apex.html"><i class="fa fa-angle-right"></i><span>Apex Chart</span></a></li>
+                <li><a class="m-link" href="chart-chartjs.html"><i class="fa fa-angle-right"></i><span>ChartJS</span></a></li>
+                <li><a class="m-link" href="chart-knob.html"><i class="fa fa-angle-right"></i><span>JQuery Knob</span></a></li>
+                <li><a class="m-link" href="chart-sparkline.html"><i class="fa fa-angle-right"></i><span>Sparkline</span></a></li>
+            </ul>
+            <!-- sidebar: Advanced Elements -->
+            <ul class="menu-list">
+                <li class="divider py-2 lh-sm"><span class="text-primary small fw-bold text-uppercase">Advanced Elements</span><br><small class="text-muted">Getting Started</small></li>
+                <li><a class="m-link" href="element-clipboard.html"><i class="fa fa-angle-right"></i><span>Clipboard</span></a></li>
+                <li><a class="m-link" href="element-colorpicker.html"><i class="fa fa-angle-right"></i><span>Colorpicker</span></a></li>
+                <li><a class="m-link" href="element-daterange.html"><i class="fa fa-angle-right"></i><span>Date Range Picker</span></a></li>
+                <li><a class="m-link" href="element-datepicker.html"><i class="fa fa-angle-right"></i><span>Datepicker</span></a></li>
+                <li><a class="m-link" href="element-dropify.html"><i class="fa fa-angle-right"></i><span>Dropify</span></a></li>
+                <li><a class="m-link" href="element-flatpickr.html"><i class="fa fa-angle-right"></i><span>Flatpickr</span></a></li>
+                <li><a class="m-link" href="element-inputmask.html"><i class="fa fa-angle-right"></i><span>Inputmask</span></a></li>
+                <li><a class="m-link" href="element-imageinput.html"><i class="fa fa-angle-right"></i><span>Image Input</span></a></li>
+                <li><a class="m-link" href="element-maxlength.html"><i class="fa fa-angle-right"></i><span>Maxlength</span></a></li>
+                <li><a class="m-link" href="element-nouislider.html"><i class="fa fa-angle-right"></i><span>nouislider</span></a></li>
+                <li><a class="m-link" href="element-passwordmeter.html"><i class="fa fa-angle-right"></i><span>Password Meter</span></a></li>
+                <li><a class="m-link" href="element-rangeslider.html"><i class="fa fa-angle-right"></i><span>Rangeslider</span></a></li>
+                <li><a class="m-link" href="element-sweetalert2.html"><i class="fa fa-angle-right"></i><span>Sweetalert 2</span></a></li>
+                <li><a class="m-link" href="element-tagsinput.html"><i class="fa fa-angle-right"></i><span>Tagsinput</span></a></li>
+                <li><a class="m-link" href="element-select2.html"><i class="fa fa-angle-right"></i><span>Select 2</span></a></li>
+                <li><a class="m-link" href="element-multiselectsplitter.html"><i class="fa fa-angle-right"></i><span>Multiselect Splitter</span></a></li>
+                <li><a class="m-link" href="element-jkanban.html"><i class="fa fa-angle-right"></i><span>jKanban Board</span></a></li>
+            </ul>
+            <!-- sidebar: Form Elements -->
+            <ul class="menu-list">
+                <li class="divider py-2 lh-sm"><span class="text-primary small fw-bold text-uppercase">Form Elements</span><br><small class="text-muted">Getting Started</small></li>
+                <li><a class="m-link" href="form-bootstrap.html"><i class="fa fa-angle-right"></i><span>Bootstrap Form</span></a></li>
+                <li><a class="m-link" href="form-wizard-h.html"><i class="fa fa-angle-right"></i><span>Form Wizard horizontal</span></a></li>
+                <li><a class="m-link" href="form-wizard-v.html"><i class="fa fa-angle-right"></i><span>Form Wizard Vertical</span></a></li>
+                <li><a class="m-link" href="form-wizard-validate.html"><i class="fa fa-angle-right"></i><span>Form Wizard Validate</span></a></li>
+                <li><a class="m-link" href="form-custome.html"><i class="fa fa-angle-right"></i><span>Custome Form</span></a></li>
+            </ul>
+            <!-- sidebar: Font Icons -->
+            <ul class="menu-list">
+                <li class="divider py-2 lh-sm"><span class="text-primary small fw-bold text-uppercase">Font Icons</span><br><small class="text-muted">Getting Started</small></li>
+                <li><a class="m-link" href="icon-fontawesome.html"><i class="fa fa-angle-right"></i>Font Awesome</a></li>
+                <li><a class="m-link" href="icon-linear.html"><i class="fa fa-angle-right"></i>Simple line</a></li>
+                <li><a class="m-link" href="icon-weather.html"><i class="fa fa-angle-right"></i>Weather Icons</a></li>
+                <li><a class="m-link" href="icon-feather.html"><i class="fa fa-angle-right"></i>Feather Icons</a></li>
+                <li><a class="m-link" href="icon-8.html"><i class="fa fa-angle-right"></i>Icons8 Line Awesome</a></li>
+                <li><a class="m-link" href="icon-bootstrap.html"><i class="fa fa-angle-right"></i>Bootstrap Icon</a></li>
+                <li><a class="m-link" href="icon-flag.html"><i class="fa fa-angle-right"></i>Flag Icon</a></li>
+            </ul>
+            <!-- sidebar: Plugins -->
+            <ul class="menu-list">
+                <li class="divider py-2 lh-sm"><span class="text-primary small fw-bold text-uppercase">Plugins</span><br><small class="text-muted">Manage with npm install</small></li>
+                <li><a class="m-link" href="plugin-table.html"><i class="fa fa-angle-right"></i><span>DataTables</span></a></li>
+                <li><a class="m-link" href="plugin-jsgrid.html"><i class="fa fa-angle-right"></i><span>jsGrid Table</span></a></li>
+                <li><a class="m-link" href="plugin-summernote.html"><i class="fa fa-angle-right"></i><span>Summernote</span></a></li>
+                <li><a class="m-link" href="plugin-owlcarousel.html"><i class="fa fa-angle-right"></i><span>Owl Carousel</span></a></li>
+                <li><a class="m-link" href="plugin-masonrygallery.html"><i class="fa fa-angle-right"></i><span>Masonry Gallery</span></a></li>
+                <li><a class="m-link" href="plugin-fancybox.html"><i class="fa fa-angle-right"></i><span>FancyBox Gallery</span></a></li>
+                <li><a class="m-link" href="plugin-dropify.html"><i class="fa fa-angle-right"></i><span>Drag & Drop</span></a></li>
+                <li><a class="m-link" href="plugin-nestable.html"><i class="fa fa-angle-right"></i><span>jquery Nestable</span></a></li>
+                <li><a class="m-link" href="plugin-skedtape.html"><i class="fa fa-angle-right"></i><span>jQuery skedTape</span></a></li>
+                <li><a class="m-link" href="plugin-typedjs.html"><i class="fa fa-angle-right"></i><span>Typed.js</span></a></li>
+                <li><a class="m-link" href="plugin-fullcalendar.html"><i class="fa fa-angle-right"></i><span>Fullcalendar</span></a></li>
+                <li><a class="m-link" href="plugin-countup.html"><i class="fa fa-angle-right"></i><span>CountUp</span></a></li>
+                <li><a class="m-link" href="plugin-imagecropper.html"><i class="fa fa-angle-right"></i><span>Cropper</span></a></li>
+                <li><a class="m-link" href="plugin-tabledragger.html"><i class="fa fa-angle-right"></i><span>Table Dragger</span></a></li>
+                <li><a class="m-link" href="plugin-x-editable.html"><i class="fa fa-angle-right"></i><span>X-editable</span></a></li>
+                <li><a class="m-link" href="plugin-swiper.html"><i class="fa fa-angle-right"></i><span>Swiper</span></a></li>
+            </ul>
+            <!-- sidebar: Components -->
+            <ul class="menu-list pb-4">
+                <li class="divider py-2 lh-sm"><span class="text-primary small fw-bold text-uppercase">Components</span><br><small class="text-muted">Bootstrap 5 Components</small></li>
+                <li><a class="m-link" href="ui-alerts.html"><i class="fa fa-angle-right"></i>Alerts</a></li>
+                <li><a class="m-link" href="ui-avatar.html"><i class="fa fa-angle-right"></i>Avatar</a></li>
+                <li><a class="m-link" href="ui-badge.html"><i class="fa fa-angle-right"></i>Badge</a></li>
+                <li><a class="m-link" href="ui-border.html"><i class="fa fa-angle-right"></i>Borders</a></li>
+                <li><a class="m-link" href="ui-breadcrumb.html"><i class="fa fa-angle-right"></i>Breadcrumb</a></li>
+                <li><a class="m-link" href="ui-buttons.html"><i class="fa fa-angle-right"></i>Buttons</a></li>
+                <li><a class="m-link" href="ui-card.html"><i class="fa fa-angle-right"></i>Card</a></li>
+                <li><a class="m-link" href="ui-carousel.html"><i class="fa fa-angle-right"></i>Carousel</a></li>
+                <li><a class="m-link" href="ui-collapse.html"><i class="fa fa-angle-right"></i>Collapse</a></li>
+                <li><a class="m-link" href="ui-dropdowns.html"><i class="fa fa-angle-right"></i>Dropdowns</a></li>
+                <li><a class="m-link" href="ui-listgroup.html"><i class="fa fa-angle-right"></i>List group</a></li>
+                <li><a class="m-link" href="ui-modal.html"><i class="fa fa-angle-right"></i>Modal</a></li>
+                <li><a class="m-link" href="ui-navbar.html"><i class="fa fa-angle-right"></i>Navbar</a></li>
+                <li><a class="m-link" href="ui-navs.html"><i class="fa fa-angle-right"></i>Navs</a></li>
+                <li><a class="m-link active" href="ui-pagination.html"><i class="fa fa-angle-right"></i>Pagination</a></li>
+                <li><a class="m-link" href="ui-popovers.html"><i class="fa fa-angle-right"></i>Popovers</a></li>
+                <li><a class="m-link" href="ui-progress.html"><i class="fa fa-angle-right"></i>Progress</a></li>
+                <li><a class="m-link" href="ui-scrollspy.html"><i class="fa fa-angle-right"></i>Scrollspy</a></li>
+                <li><a class="m-link" href="ui-spinners.html"><i class="fa fa-angle-right"></i>Spinners</a></li>
+                <li><a class="m-link" href="ui-toasts.html"><i class="fa fa-angle-right"></i>Toasts</a></li>
+                <li><a class="m-link" href="ui-tooltips.html"><i class="fa fa-angle-right"></i>Tooltips</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- start: body area -->
+    <div class="wrapper">
+
+        <!-- start: page header -->
+        <header class="page-header sticky-top px-xl-4 px-sm-2 px-0 py-lg-2 py-1">
+            <div class="container">
+
+                <nav class="navbar">
+                    <!-- start: toggle btn -->
+                    <div class="d-flex">
+                        <button type="button" class="btn btn-link d-block d-xl-none menu-toggle ps-0 text-primary">
+                            <span><i class="fa fa-navicon"></i></span>
+                        </button>
+                        <a href="index.html" class="brand-icon d-flex align-items-center me-1 me-sm-3 me-lg-4 text-primary">
+                            <span class="fs-4 fw-bold">Doc<span class="d-lg-inline-block d-none">umentation</span>
+                        </a>
+                    </div>
+                    <!-- start: search area -->
+                    <div class="header-left flex-grow-1 d-none d-md-block">
+                        <div class="main-search px-3 flex-fill">
+                            <input class="form-control" type="text" placeholder="Enter your search key word">
+                            <div class="card shadow rounded-4 search-result slidedown">
+                                <div class="card-body">
+                                    <small class="text-uppercase text-muted">Recent searches</small>
+                                    <div class="d-flex flex-wrap align-items-start mt-2 mb-4">
+                                        <a class="small rounded py-1 px-2 m-1 fw-normal bg-primary text-white" href="../dist/dashboard-fitness.html">Fitness Analytics</a>
+                                        <a class="small rounded py-1 px-2 m-1 fw-normal bg-danger text-white" href="../dist/dashboard-job.html">job Portal</a>
+                                        <a class="small rounded py-1 px-2 m-1 fw-normal bg-secondary text-white" href="../dist/dashboard-crypto.html">Cryptocurrency</a>
+                                        <a class="small rounded py-1 px-2 m-1 fw-normal bg-success text-white" href="../dist/app-calendar-tui.html">Tui Calendar</a>
+                                        <a class="small rounded py-1 px-2 m-1 fw-normal bg-warning text-white" href="../dist/app-campaigns.html">Campaigns</a>
+                                        <a class="small rounded py-1 px-2 m-1 fw-normal bg-dark text-white" href="../dist/app-blog.html">Blog</a>
+                                        <a class="small rounded py-1 px-2 m-1 fw-normal bg-info text-white" href="../dist/page-bookmark.html">Bookmarks</a>
+                                    </div>
+                                    <small class="text-uppercase text-muted">Suggestions</small>
+                                    <div class="card list-group list-group-flush list-group-custom mt-2">
+                                        <a class="list-group-item list-group-item-action text-truncate" href="doc-helperclass.html">
+                                            <div class="fw-bold">Helper Class</div>
+                                            <small class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action text-truncate" href="element-daterange.html">
+                                            <div class="fw-bold">Date Range Picker</div>
+                                            <small class="text-muted">There are many variations of passages of Lorem Ipsum available</small>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action text-truncate" href="element-imageinput.html">
+                                            <div class="fw-bold">Image Input</div>
+                                            <small class="text-muted">It is a long established fact that a reader will be distracted</small>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action text-truncate" href="plugin-table.html">
+                                            <div class="fw-bold">DataTables for jQuery</div>
+                                            <small class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action text-truncate" href="doc-setup.html">
+                                            <div class="fw-bold">Development Setup</div>
+                                            <small class="text-muted">Contrary to popular belief, Lorem Ipsum is not simply random text.</small>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- start: link -->
+                    <div class="h-right justify-content-end d-flex align-items-center">
+                        <a class="btn btn-light" href="https://www.wrraptheme.com/templates/luno/marketing/"><i class="fa fa-external-link me-2"></i>Preview</a>
+                        <a class="btn btn-danger mx-2" href="https://themeforest.net/item/luno-bootstrap-5-responsive-admin-dashboard-template/36214125"><i class="fa fa-download me-2"></i>Download</a>
+                        <a class="btn btn-light" href="#" data-bs-toggle="modal" data-bs-target="#SettingsModal" title="Settings"><i class="fa fa-gear"></i></a>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+
+        <!-- start: page toolbar -->
+        <div class="page-toolbar px-xl-4 px-sm-2 px-0 py-3">
+            <div class="container">
+
+                <div class="row mb-3 align-items-center">
+                    <div class="col">
+                        <ol class="breadcrumb bg-transparent mb-0">
+                            <li class="breadcrumb-item"><a class="text-secondary" href="../dist/index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-secondary" href="index.html">Documentation</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Pagination</li>
+                        </ol>
+                    </div>
+                    <div class="col text-lg-end">
+                        <a class="btn btn-primary" href="ui-navs.html"><i class="fa fa-long-arrow-left me-2"></i>Bootstrap navs</a>
+                        <a class="btn btn-secondary" href="ui-popovers.html">Bootstrap popovers<i class="fa fa-long-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- start: page body -->
+        <div class="page-body px-xl-4 px-sm-2 px-0 py-lg-2 py-1 mt-3">
+            <div class="container">
+
+                <div class="row g-3">
+                    <div class="col-12">
+                        <h2 id="overview">Overview</h2>
+                        <p>We use a large block of connected links for our pagination, making links hard to miss and easily scalable—all while providing large hit areas. Pagination is built with list HTML elements so screen readers can announce the number of available links. Use a wrapping <code>&lt;nav&gt;</code> element to identify it as a navigation section to screen readers and other assistive technologies.</p>
+                        <p>In addition, as pages likely have more than one such navigation section, it’s advisable to provide a descriptive <code>aria-label</code> for the <code>&lt;nav&gt;</code> to reflect its purpose. For example, if the pagination component is used to navigate between a set of search results, an appropriate label could be <code>aria-label="Search results pages"</code>.</p>
+                        <ul class="nav nav-tabs tab-card px-3 border-bottom-0" role="tablist">
+                            <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#nav-Preview1" role="tab">Preview</a></li>
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#nav-HTML1" role="tab">HTML</a></li>
+                        </ul>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="nav-Preview1" role="tabpanel">
+                                        <nav aria-label="Page navigation">
+                                            <ul class="pagination mb-0">
+                                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-HTML1" role="tabpanel">
+<pre class="language-html m-0" data-lang="html">
+<code>&lt;nav aria-label=&quot;Page navigation example&quot;&gt;
+    &lt;ul class=&quot;pagination&quot;&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code>
+</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-top mt-5 pt-3">
+                            <h5 id="working-with-icons">Working with icons</h5>
+                            <p>Looking to use an icon or symbol in place of text for some pagination links? Be sure to provide proper screen reader support with <code>aria</code> attributes.</p>
+                            <ul class="nav nav-tabs tab-card px-3 border-bottom-0" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#nav-Preview2" role="tab">Preview</a></li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#nav-HTML2" role="tab">HTML</a></li>
+                            </ul>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="nav-Preview2" role="tabpanel">
+                                            <nav aria-label="Page navigation">
+                                                <ul class="pagination mb-0">
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-HTML2" role="tabpanel">
+<pre class="language-html m-0" data-lang="html">
+<code>&lt;nav aria-label=&quot;Page navigation&quot;&gt;
+    &lt;ul class=&quot;pagination&quot;&gt;
+        &lt;li class=&quot;page-item&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code>
+</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-top mt-5 pt-3">
+                            <h5 id="disabled-and-active-states">Disabled and active states</h5>
+                            <p>Pagination links are customizable for different circumstances. Use <code>.disabled</code> for links that appear un-clickable and <code>.active</code> to indicate the current page.</p>
+                            <p>While the <code>.disabled</code> class uses <code>pointer-events: none</code> to <em>try</em> to disable the link functionality of <code>&lt;a&gt;</code>s, that CSS property is not yet standardized and doesn’t account for keyboard navigation. As such, you should always add <code>tabindex="-1"</code> on disabled links and use custom JavaScript to fully disable their functionality.</p>
+                            <ul class="nav nav-tabs tab-card px-3 border-bottom-0" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#nav-Preview3" role="tab">Preview</a></li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#nav-HTML3" role="tab">HTML</a></li>
+                            </ul>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="nav-Preview3" role="tabpanel">
+                                            <nav aria-label="...">
+                                                <ul class="pagination">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item active" aria-current="page">
+                                                        <a class="page-link" href="#">2 <span class="visually-hidden">(current)</span></a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                            <p>You can optionally swap out active or disabled anchors for <code>&lt;span&gt;</code>, or omit the anchor in the case of the prev/next arrows, to remove click functionality and prevent keyboard focus while retaining intended styles.</p>
+                                            <nav aria-label="...">
+                                                <ul class="pagination">
+                                                    <li class="page-item disabled">
+                                                        <span class="page-link">Previous</span>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item active" aria-current="page">
+                                                        <span class="page-link">2<span class="visually-hidden">(current)</span></span>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-HTML3" role="tabpanel">
+<pre class="language-html m-0" data-lang="html">
+<code>&lt;nav aria-label=&quot;...&quot;&gt;
+    &lt;ul class=&quot;pagination&quot;&gt;
+        &lt;li class=&quot;page-item disabled&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Previous&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item active&quot; aria-current=&quot;page&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2 &lt;span class=&quot;visually-hidden&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;nav aria-label=&quot;...&quot;&gt;
+    &lt;ul class=&quot;pagination&quot;&gt;
+        &lt;li class=&quot;page-item disabled&quot;&gt;
+            &lt;span class=&quot;page-link&quot;&gt;Previous&lt;/span&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item active&quot; aria-current=&quot;page&quot;&gt;
+            &lt;span class=&quot;page-link&quot;&gt;2&lt;span class=&quot;visually-hidden&quot;&gt;(current)&lt;/span&gt;&lt;/span&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code>
+</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-top mt-5 pt-3">
+                            <h5 id="sizing">Sizing</h5>
+                            <p>Fancy larger or smaller pagination? Add <code>.pagination-lg</code> or <code>.pagination-sm</code> for additional sizes.</p>
+                            <ul class="nav nav-tabs tab-card px-3 border-bottom-0" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#nav-Preview4" role="tab">Preview</a></li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#nav-HTML4" role="tab">HTML</a></li>
+                            </ul>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="nav-Preview4" role="tabpanel">
+                                            <!-- pagination: lg -->
+                                            <nav aria-label="...">
+                                                <ul class="pagination pagination-lg">
+                                                    <li class="page-item active" aria-current="page">
+                                                        <span class="page-link">1<span class="visually-hidden">(current)</span></span>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                </ul>
+                                            </nav>
+                                            <!-- pagination: md -->
+                                            <nav aria-label="...">
+                                                <ul class="pagination">
+                                                    <li class="page-item active" aria-current="page">
+                                                        <span class="page-link">1<span class="visually-hidden">(current)</span></span>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                </ul>
+                                            </nav>
+
+                                            <!-- pagination: sm -->
+                                            <nav aria-label="...">
+                                                <ul class="pagination pagination-sm">
+                                                    <li class="page-item active" aria-current="page">
+                                                        <span class="page-link">1<span class="visually-hidden">(current)</span></span>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-HTML4" role="tabpanel">
+<pre class="language-html m-0" data-lang="html">
+<code>&lt;!-- pagination: lg --&gt;
+    &lt;nav aria-label=&quot;...&quot;&gt;
+    &lt;ul class=&quot;pagination pagination-lg&quot;&gt;
+        &lt;li class=&quot;page-item active&quot; aria-current=&quot;page&quot;&gt;
+            &lt;span class=&quot;page-link&quot;&gt;1&lt;span class=&quot;visually-hidden&quot;&gt;(current)&lt;/span&gt;&lt;/span&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;!-- pagination: md --&gt;
+&lt;nav aria-label=&quot;...&quot;&gt;
+    &lt;ul class=&quot;pagination&quot;&gt;
+        &lt;li class=&quot;page-item active&quot; aria-current=&quot;page&quot;&gt;
+            &lt;span class=&quot;page-link&quot;&gt;1&lt;span class=&quot;visually-hidden&quot;&gt;(current)&lt;/span&gt;&lt;/span&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;!-- pagination: sm --&gt;
+&lt;nav aria-label=&quot;...&quot;&gt;
+    &lt;ul class=&quot;pagination pagination-sm&quot;&gt;
+        &lt;li class=&quot;page-item active&quot; aria-current=&quot;page&quot;&gt;
+            &lt;span class=&quot;page-link&quot;&gt;1&lt;span class=&quot;visually-hidden&quot;&gt;(current)&lt;/span&gt;&lt;/span&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code>
+</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-top mt-5 pt-3">
+                            <h5 id="alignment">Alignment</h5>
+                            <p>Change the alignment of pagination components with <a href="https://v5.getbootstrap.com/docs/5.0/utilities/flex/">flexbox utilities</a>.</p>
+                            <ul class="nav nav-tabs tab-card px-3 border-bottom-0" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#nav-Preview5" role="tab">Preview</a></li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#nav-HTML5" role="tab">HTML</a></li>
+                            </ul>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="nav-Preview5" role="tabpanel">
+                                            <!-- pagination: left -->
+                                            <nav aria-label="Page navigation">
+                                                <ul class="pagination justify-content-start">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+
+                                            <!-- pagination: center -->
+                                            <nav aria-label="Page navigation">
+                                                <ul class="pagination justify-content-center">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+
+                                            <!-- pagination: right -->
+                                            <nav aria-label="Page navigation">
+                                                <ul class="pagination justify-content-end">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-HTML5" role="tabpanel">
+<pre class="language-html m-0" data-lang="html">
+<code>&lt;!-- pagination: left --&gt;
+&lt;nav aria-label=&quot;Page navigation&quot;&gt;
+    &lt;ul class=&quot;pagination justify-content-start&quot;&gt;
+        &lt;li class=&quot;page-item disabled&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Previous&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;!-- pagination: center --&gt;
+&lt;nav aria-label=&quot;Page navigation&quot;&gt;
+    &lt;ul class=&quot;pagination justify-content-center&quot;&gt;
+        &lt;li class=&quot;page-item disabled&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Previous&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;!-- pagination: right --&gt;
+&lt;nav aria-label=&quot;Page navigation&quot;&gt;
+    &lt;ul class=&quot;pagination justify-content-end&quot;&gt;
+        &lt;li class=&quot;page-item disabled&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Previous&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code>
+</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- .row end -->
+
+                <!-- start: navigation btn -->
+                <div class="row g-3 mt-3">
+                    <div class="col-12">
+                        <a class="btn lift btn-lg rounded-4 btn-primary" href="ui-navs.html"><i class="fa fa-long-arrow-left me-3"></i>Bootstrap navs</a>
+                        <a class="btn lift btn-lg rounded-4 btn-secondary" href="ui-popovers.html">Bootstrap popovers<i class="fa fa-long-arrow-right ms-3"></i></a>
+                    </div>
+                </div> <!-- .row end -->
+
+            </div>
+        </div>
+
+       <!-- start: page footer -->
+       <footer class="page-footer px-xl-4 px-sm-2 px-0 py-3">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <p class="col-md-4 mb-0 text-muted">© 2022 <a href="https://www.thememakker.com/" target="_blank" title="ThemeMakker Infotech LLP">ThemeMakker</a>, All Rights Reserved.</p>
+            <a href="#" class="col-md-4 d-flex align-items-center justify-content-center my-3 my-lg-0 me-lg-auto">
+                <svg height="18" viewBox="0 0 136 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="fill-primary" d="M0.380005 1.22398H10.78V37H0.380005V1.22398ZM15.044 24.832H12.964V16.876H14.732C15.8067 16.876 16.6213 16.8413 17.176 16.772C17.7307 16.668 18.164 16.4947 18.476 16.252C18.7533 16.0093 18.944 15.6453 19.048 15.16C19.152 14.6747 19.204 13.964 19.204 13.028C19.204 12.092 19.152 11.3813 19.048 10.896C18.944 10.376 18.7533 9.99465 18.476 9.75198C18.1987 9.50932 17.7827 9.35332 17.228 9.28398C16.708 9.21465 15.876 9.17998 14.732 9.17998H12.964V1.22398H18.32C20.7813 1.22398 22.7747 1.46665 24.3 1.95198C25.8253 2.43732 27.004 3.18265 27.836 4.18798C28.5987 5.12398 29.1013 6.28532 29.344 7.67198C29.6213 9.05865 29.76 10.844 29.76 13.028C29.76 15.836 29.5 18.0027 28.98 19.528C28.252 21.4693 26.9693 22.8387 25.132 23.636L30.54 37H19.62L15.044 24.832Z" fill="black"/>
+                    <path class="fill-primary" d="M35.4191 1.22398H45.8191V37H35.4191V1.22398ZM48.0031 1.22398H61.2111V9.17998H48.0031V1.22398ZM48.0031 14.952H58.7671V22.908H48.0031V14.952ZM48.0031 29.044H61.2111V37H48.0031V29.044Z" fill="black"/>
+                    <path class="fill-primary" d="M67.462 2.67998V1.22398H77.862L97.934 35.492V37H87.586L67.462 2.67998ZM88.054 14.276V1.22398H97.934V31.176L88.054 14.276ZM67.462 6.99598L77.342 23.896V37H67.462V6.99598Z" fill="black"/>
+                    <path class="fill-primary" d="M124.549 19.112C124.549 16.096 124.531 14.12 124.497 13.184C124.427 11.7627 124.237 10.74 123.925 10.116C123.613 9.45732 123.11 9.05865 122.417 8.91998C121.723 8.81598 120.735 8.76398 119.453 8.76398C117.962 8.76398 116.991 8.83332 116.541 8.97198V0.859982C116.853 0.825315 117.321 0.807983 117.945 0.807983H119.453C123.335 0.807983 126.334 1.11998 128.449 1.74398C130.598 2.33332 132.158 3.32132 133.129 4.70798C134.03 5.99065 134.585 7.67198 134.793 9.75198C135.035 11.832 135.157 14.952 135.157 19.112C135.157 22.752 135.07 25.56 134.897 27.536C134.758 29.4773 134.377 31.0893 133.753 32.372C133.059 33.828 131.985 34.9373 130.529 35.7C129.107 36.4627 127.114 36.9653 124.549 37.208V19.112ZM119.453 37.416C114.391 37.416 110.751 36.8613 108.533 35.752C107.389 35.1973 106.487 34.452 105.829 33.516C105.17 32.58 104.685 31.4187 104.373 30.032C104.095 28.8187 103.922 27.432 103.853 25.872C103.783 24.2773 103.749 22.024 103.749 19.112C103.749 15.472 103.818 12.6813 103.957 10.74C104.13 8.79865 104.529 7.16931 105.153 5.85198C105.846 4.43065 106.903 3.33865 108.325 2.57598C109.746 1.81332 111.757 1.29332 114.357 1.01598V19.112C114.357 21.1573 114.391 23.116 114.461 24.988C114.53 26.4093 114.703 27.4493 114.981 28.108C115.293 28.7667 115.795 29.148 116.489 29.252C117.078 29.3907 118.066 29.46 119.453 29.46C120.874 29.46 121.845 29.408 122.365 29.304V37.364C122.053 37.3986 121.585 37.416 120.961 37.416H119.453Z" fill="black"/>
+                </svg>
+            </a>
+            <ul class="nav col-md-4 justify-content-center justify-content-lg-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</div>
+
+<!-- Modal: Setting -->
+<div class="modal fade" id="SettingsModal" tabindex="-1">
+    <div class="modal-dialog modal-sm modal-dialog-vertical right-side modal-dialog-scrollable">
+        <div class="modal-content px-2">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Theme Setting</h5>
+            </div>
+            <div class="modal-body custom_scroll">
+                <!-- start: color setting -->
+                <div class="setting-theme mb-4">
+                    <h6>Color Settings</h6>
+                    <ul class="list-unstyled d-flex justify-content-between choose-skin mb-2">
+                        <li data-theme="black"><div class="black"></div></li>
+                        <li data-theme="indigo"><div class="indigo"></div></li>
+                        <li data-theme="blue" class="active"><div class="blue"></div></li>
+                        <li data-theme="cyan"><div class="cyan"></div></li>
+                        <li data-theme="green"><div class="green"></div></li>
+                        <li data-theme="orange"><div class="orange"></div></li>
+                        <li data-theme="blush"><div class="blush"></div></li>
+                        <li data-theme="red"><div class="red"></div></li>
+                        <li data-theme="dynamic"><div class="dynamic"><i class="fa fa-paint-brush"></i></div></li>
+                    </ul>
+                    <!-- Settings: Theme dynamics -->
+                    <div class="dt-setting">
+                        <h6>Dynamic Color Settings</h6>
+                        <ul class="list-group list-group-custom list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-0">
+                                <label>Primary Color</label>
+                                <button id="primaryColorPicker" class="btn bg-primary avatar xs border-0 rounded-0"></button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-0">
+                                <label>Secondary Color</label>
+                                <button id="secondaryColorPicker" class="btn bg-secondary avatar xs border-0 rounded-0"></button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-0">
+                                <label class="text-muted small">Chart Color 1</label>
+                                <button id="chartColorPicker1" class="btn chart-color1 avatar xs border-0 rounded-0"></button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-0">
+                                <label class="text-muted small">Chart Color 2</label>
+                                <button id="chartColorPicker2" class="btn chart-color2 avatar xs border-0 rounded-0"></button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-0">
+                                <label class="text-muted small">Chart Color 3</label>
+                                <button id="chartColorPicker3" class="btn chart-color3 avatar xs border-0 rounded-0"></button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-0">
+                                <label class="text-muted small">Chart Color 4</label>
+                                <button id="chartColorPicker4" class="btn chart-color4 avatar xs border-0 rounded-0"></button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center py-1 px-0">
+                                <label class="text-muted small">Chart Color 5</label>
+                                <button id="chartColorPicker5" class="btn chart-color5 avatar xs border-0 rounded-0"></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- start: Light/dark -->
+                <div class="setting-mode mb-4">
+                    <h6>Light/Dark & Contrast Layout</h6>
+                    <ul class="list-group list-group-flush mb-0">
+                        <li class="list-group-item d-flex align-items-center px-0">
+                            <div class="form-check form-switch theme-switch mb-0">
+                                <input class="form-check-input" type="checkbox" id="theme-switch">
+                                <label class="form-check-label" for="theme-switch">Enable Dark Mode!</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center px-0">
+                            <div class="form-check form-switch theme-high-contrast mb-0">
+                                <input class="form-check-input" type="checkbox" id="theme-high-contrast">
+                                <label class="form-check-label" for="theme-high-contrast">Enable High Contrast</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center px-0">
+                            <div class="form-check form-switch theme-rtl mb-0">
+                                <input class="form-check-input" type="checkbox" id="theme-rtl">
+                                <label class="form-check-label" for="theme-rtl">Enable RTL Mode!</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- start: Font setting -->
+                <div class="setting-font mb-4">
+                    <h6>Font Settings</h6>
+                    <ul class="list-group list-group-flush font_setting">
+                        <li class="list-group-item px-0">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="radio" name="font" id="font-opensans" value="font-opensans" checked="">
+                                <label class="form-check-label" for="font-opensans">Open Sans Google Font</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item px-0">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="radio" name="font" id="font-quicksand" value="font-quicksand">
+                                <label class="form-check-label" for="font-quicksand">Quicksand Google Font</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item px-0">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="radio" name="font" id="font-nunito" value="font-nunito">
+                                <label class="form-check-label" for="font-nunito">Nunito Google Font</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item px-0">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="radio" name="font" id="font-Raleway" value="font-raleway">
+                                <label class="form-check-label" for="font-Raleway">Raleway Google Font</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- start: Extra setting -->
+                <div class="setting-more mb-4">
+                    <h6>Extra Setting</h6>
+                    <ul class="list-group list-group-custom list-group-flush">
+                        <li class="list-group-item px-0">
+                            <!-- Settings: page header  -->
+                            <div class="form-check form-switch pageheader-switch mb-1">
+                                <input class="form-check-input" type="checkbox" id="PageHeader" checked>
+                                <label class="form-check-label" for="PageHeader">Page Header Fix</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item px-0">
+                            <!-- Settings: radius  -->
+                            <div class="form-check form-switch radius-switch mb-1">
+                                <input class="form-check-input" type="checkbox" id="BorderRadius">
+                                <label class="form-check-label" for="BorderRadius">Border Radius none</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item px-0">
+                            <!-- Settings: sidebar dark -->
+                            <div class="form-check form-switch sidebardark-switch mb-1">
+                                <input class="form-check-input" type="checkbox" id="SidebarDark" checked="">
+                                <label class="form-check-label" for="SidebarDark">Enable Dark! ( Sidebar )</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item px-0">
+                            <!-- Settings: bg image -->
+                            <div class="setting-img">
+                                <div class="form-check form-switch imagebg-switch mb-1">
+                                    <input class="form-check-input" type="checkbox" id="CheckImage">
+                                    <label class="form-check-label" for="CheckImage">Background Image (Sidebar)</label>
+                                </div>
+                                <div class="bg-images">
+                                    <ul class="list-unstyled d-flex justify-content-between">
+                                        <li class="sidebar-img-1 sidebar-img-active"><a class="rounded sidebar-img" id="img-1" href="#"><img src="assets/images/sidebar-bg/sidebar-1.jpg" alt="" /></a></li>
+                                        <li class="sidebar-img-2"><a class="rounded sidebar-img" id="img-2" href="#"><img src="assets/images/sidebar-bg/sidebar-2.jpg" alt="" /></a></li>
+                                        <li class="sidebar-img-3"><a class="rounded sidebar-img" id="img-3" href="#"><img src="assets/images/sidebar-bg/sidebar-3.jpg" alt="" /></a></li>
+                                        <li class="sidebar-img-4"><a class="rounded sidebar-img" id="img-4" href="#"><img src="assets/images/sidebar-bg/sidebar-4.jpg" alt="" /></a></li>
+                                        <li class="sidebar-img-5"><a class="rounded sidebar-img" id="img-5" href="#"><img src="assets/images/sidebar-bg/sidebar-5.jpg" alt="" /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item px-0">
+                            <!-- Settings: sidebar dark -->
+                            <div class="form-check form-switch fluid-switch mb-1">
+                                <input class="form-check-input" type="checkbox" id="fluidLayout">
+                                <label class="form-check-label" for="fluidLayout">Container Fluid</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-start text-center">
+                <button type="button" class="btn flex-fill btn-primary lift">Save Changes</button>
+                <button type="button" class="btn flex-fill btn-white border lift" data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Jquery Core Js -->
+<script src="../dist/assets/bundles/libscripts.bundle.js"></script>
+
+<!-- Prism js file please do not add in your project -->
+<script src="../dist/assets/plugin/prismjs/prism.js"></script>
+
+<!-- Jquery Page Js -->
+
+</body>
+</html>

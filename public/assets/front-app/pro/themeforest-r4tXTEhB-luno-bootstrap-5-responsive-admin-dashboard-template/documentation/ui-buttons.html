@@ -1,0 +1,1176 @@
+<!doctype html>
+<html class="no-js " lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Bootstrap 5 admin template and web Application ui kit.">
+    <meta name="keyword" content="LUNO, Bootstrap 5, ReactJs, Angular, Laravel, VueJs, ASP .Net, Admin Dashboard, Admin Theme, HRMS, Projects">
+    <title>:: LUNO :: Documentation</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon-->
+
+    <!-- project css file  -->
+    <link rel="stylesheet" href="../dist/assets/css/luno.style.min.css">
+
+    <!-- Prism css file please do not add in your project -->
+    <link rel="stylesheet" href="../dist/assets/plugin/prismjs/prism.css">
+    <style>
+        .layout-1 .document.sidebar{width: 260px;}
+        .layout-1 .document.sidebar .title-text{flex-direction: row;}
+        .layout-1 .document.sidebar .menu-list{border: 0; padding: 0;}
+        .layout-1 .document.sidebar .menu-list li{border: 0;}
+        .layout-1 .document.sidebar .menu-list .m-link{padding: 4px 0;}
+        .layout-1 .document.sidebar .menu-list .m-link>i{text-align: left;margin: 0; width: 20px;}
+    </style>
+</head>
+
+<body class="layout-1" data-luno="theme-blue">
+
+    <!-- sidebar -->
+    <div class="sidebar px-xl-4 px-3 py-2 py-md-3 document dark">
+        <!-- sidebar: title-->
+        <div class="title-text d-flex align-items-center mb-4 mt-1">
+            <h4 class="sidebar-title mb-0 flex-grow-1"><span class="sm-txt">L</span><span>UNO</span></h4>
+        </div>
+        <!-- sidebar: menu list -->
+        <div class="main-menu flex-grow-1">
+            <!-- sidebar: Documentation -->
+            <ul class="menu-list">
+                <li class="divider py-2 lh-sm"><span class="text-primary small fw-bold text-uppercase">Documentation</span><br><small class="text-muted">Getting Started</small></li>
+                <li><a class="m-link" href="index.html"><i class="fa fa-angle-right"></i>Overview</a></li>
+                <li><a class="m-link" href="doc-setup.html"><i class="fa fa-angle-right"></i>Dev Setup</a></li>
+                <li><a class="m-link" href="doc-structure.html"><i class="fa fa-angle-right"></i>File Structure</a></li>
+                <li><a class="m-link" href="doc-references.html"><i class="fa fa-angle-right"></i>References</a></li>
+                <li><a class="m-link" href="doc-helperclass.html"><i class="fa fa-angle-right"></i>Helper Class</a></li>
+                <li><a class="m-link" href="doc-staterpage.html"><i class="fa fa-angle-right"></i>Stater Page</a></li>
+                <li><a class="m-link" href="doc-animation.html"><i class="fa fa-angle-right"></i>Animation</a></li>
+                <li><a class="m-link" href="doc-changelog.html"><i class="fa fa-angle-right"></i>Changelog<span id="Changelog"></span></a></li>
+            </ul>
+            <!-- sidebar: Widget -->
+            <ul class="menu-list">
+                <li class="divider py-2 lh-sm"><span class="text-primary small fw-bold text-uppercase">Widget Card's</span><br><small class="text-muted">Handcrafted Cards</small></li>
+                <li><a class="m-link" href="w-cards.html"><i class="fa fa-angle-right"></i><span>Basic Card</span></a></li>
+                <li><a class="m-link" href="w-cards-tiles.html"><i class="fa fa-angle-right"></i><span>Card Tiles</span></a></li>
+                <li><a class="m-link" href="w-cards-user.html"><i class="fa fa-angle-right"></i><span>User's Card</span></a></li>
+                <li><a class="m-link" href="w-cards-tabbed.html"><i class="fa fa-angle-right"></i><span>Tabbed Card</span></a></li>
+                <li><a class="m-link" href="w-cards-ribbons.html"><i class="fa fa-angle-right"></i><span>Card Ribbons</span></a></li>
+                <li><a class="m-link" href="w-cards-list.html"><i class="fa fa-angle-right"></i><span>Card List</span></a></li>
+                <li><a class="m-link" href="w-cards-charts.html"><i class="fa fa-angle-right"></i><span>Chart Widget</span></a></li>
+            </ul>
+            <!-- sidebar: Charts -->
+            <ul class="menu-list">
+                <li class="divider py-2 lh-sm"><span class="text-primary small fw-bold text-uppercase">Charts</span><br><small class="text-muted">Getting Started</small></li>
+                <li><a class="m-link" href="chart-apex.html"><i class="fa fa-angle-right"></i><span>Apex Chart</span></a></li>
+                <li><a class="m-link" href="chart-chartjs.html"><i class="fa fa-angle-right"></i><span>ChartJS</span></a></li>
+                <li><a class="m-link" href="chart-knob.html"><i class="fa fa-angle-right"></i><span>JQuery Knob</span></a></li>
+                <li><a class="m-link" href="chart-sparkline.html"><i class="fa fa-angle-right"></i><span>Sparkline</span></a></li>
+            </ul>
+            <!-- sidebar: Advanced Elements -->
+            <ul class="menu-list">
+                <li class="divider py-2 lh-sm"><span class="text-primary small fw-bold text-uppercase">Advanced Elements</span><br><small class="text-muted">Getting Started</small></li>
+                <li><a class="m-link" href="element-clipboard.html"><i class="fa fa-angle-right"></i><span>Clipboard</span></a></li>
+                <li><a class="m-link" href="element-colorpicker.html"><i class="fa fa-angle-right"></i><span>Colorpicker</span></a></li>
+                <li><a class="m-link" href="element-daterange.html"><i class="fa fa-angle-right"></i><span>Date Range Picker</span></a></li>
+                <li><a class="m-link" href="element-datepicker.html"><i class="fa fa-angle-right"></i><span>Datepicker</span></a></li>
+                <li><a class="m-link" href="element-dropify.html"><i class="fa fa-angle-right"></i><span>Dropify</span></a></li>
+                <li><a class="m-link" href="element-flatpickr.html"><i class="fa fa-angle-right"></i><span>Flatpickr</span></a></li>
+                <li><a class="m-link" href="element-inputmask.html"><i class="fa fa-angle-right"></i><span>Inputmask</span></a></li>
+                <li><a class="m-link" href="element-imageinput.html"><i class="fa fa-angle-right"></i><span>Image Input</span></a></li>
+                <li><a class="m-link" href="element-maxlength.html"><i class="fa fa-angle-right"></i><span>Maxlength</span></a></li>
+                <li><a class="m-link" href="element-nouislider.html"><i class="fa fa-angle-right"></i><span>nouislider</span></a></li>
+                <li><a class="m-link" href="element-passwordmeter.html"><i class="fa fa-angle-right"></i><span>Password Meter</span></a></li>
+                <li><a class="m-link" href="element-rangeslider.html"><i class="fa fa-angle-right"></i><span>Rangeslider</span></a></li>
+                <li><a class="m-link" href="element-sweetalert2.html"><i class="fa fa-angle-right"></i><span>Sweetalert 2</span></a></li>
+                <li><a class="m-link" href="element-tagsinput.html"><i class="fa fa-angle-right"></i><span>Tagsinput</span></a></li>
+                <li><a class="m-link" href="element-select2.html"><i class="fa fa-angle-right"></i><span>Select 2</span></a></li>
+                <li><a class="m-link" href="element-multiselectsplitter.html"><i class="fa fa-angle-right"></i><span>Multiselect Splitter</span></a></li>
+                <li><a class="m-link" href="element-jkanban.html"><i class="fa fa-angle-right"></i><span>jKanban Board</span></a></li>
+            </ul>
+            <!-- sidebar: Form Elements -->
+            <ul class="menu-list">
+                <li class="divider py-2 lh-sm"><span class="text-primary small fw-bold text-uppercase">Form Elements</span><br><small class="text-muted">Getting Started</small></li>
+                <li><a class="m-link" href="form-bootstrap.html"><i class="fa fa-angle-right"></i><span>Bootstrap Form</span></a></li>
+                <li><a class="m-link" href="form-wizard-h.html"><i class="fa fa-angle-right"></i><span>Form Wizard horizontal</span></a></li>
+                <li><a class="m-link" href="form-wizard-v.html"><i class="fa fa-angle-right"></i><span>Form Wizard Vertical</span></a></li>
+                <li><a class="m-link" href="form-wizard-validate.html"><i class="fa fa-angle-right"></i><span>Form Wizard Validate</span></a></li>
+                <li><a class="m-link" href="form-custome.html"><i class="fa fa-angle-right"></i><span>Custome Form</span></a></li>
+            </ul>
+            <!-- sidebar: Font Icons -->
+            <ul class="menu-list">
+                <li class="divider py-2 lh-sm"><span class="text-primary small fw-bold text-uppercase">Font Icons</span><br><small class="text-muted">Getting Started</small></li>
+                <li><a class="m-link" href="icon-fontawesome.html"><i class="fa fa-angle-right"></i>Font Awesome</a></li>
+                <li><a class="m-link" href="icon-linear.html"><i class="fa fa-angle-right"></i>Simple line</a></li>
+                <li><a class="m-link" href="icon-weather.html"><i class="fa fa-angle-right"></i>Weather Icons</a></li>
+                <li><a class="m-link" href="icon-feather.html"><i class="fa fa-angle-right"></i>Feather Icons</a></li>
+                <li><a class="m-link" href="icon-8.html"><i class="fa fa-angle-right"></i>Icons8 Line Awesome</a></li>
+                <li><a class="m-link" href="icon-bootstrap.html"><i class="fa fa-angle-right"></i>Bootstrap Icon</a></li>
+                <li><a class="m-link" href="icon-flag.html"><i class="fa fa-angle-right"></i>Flag Icon</a></li>
+            </ul>
+            <!-- sidebar: Plugins -->
+            <ul class="menu-list">
+                <li class="divider py-2 lh-sm"><span class="text-primary small fw-bold text-uppercase">Plugins</span><br><small class="text-muted">Manage with npm install</small></li>
+                <li><a class="m-link" href="plugin-table.html"><i class="fa fa-angle-right"></i><span>DataTables</span></a></li>
+                <li><a class="m-link" href="plugin-jsgrid.html"><i class="fa fa-angle-right"></i><span>jsGrid Table</span></a></li>
+                <li><a class="m-link" href="plugin-summernote.html"><i class="fa fa-angle-right"></i><span>Summernote</span></a></li>
+                <li><a class="m-link" href="plugin-owlcarousel.html"><i class="fa fa-angle-right"></i><span>Owl Carousel</span></a></li>
+                <li><a class="m-link" href="plugin-masonrygallery.html"><i class="fa fa-angle-right"></i><span>Masonry Gallery</span></a></li>
+                <li><a class="m-link" href="plugin-fancybox.html"><i class="fa fa-angle-right"></i><span>FancyBox Gallery</span></a></li>
+                <li><a class="m-link" href="plugin-dropify.html"><i class="fa fa-angle-right"></i><span>Drag & Drop</span></a></li>
+                <li><a class="m-link" href="plugin-nestable.html"><i class="fa fa-angle-right"></i><span>jquery Nestable</span></a></li>
+                <li><a class="m-link" href="plugin-skedtape.html"><i class="fa fa-angle-right"></i><span>jQuery skedTape</span></a></li>
+                <li><a class="m-link" href="plugin-typedjs.html"><i class="fa fa-angle-right"></i><span>Typed.js</span></a></li>
+                <li><a class="m-link" href="plugin-fullcalendar.html"><i class="fa fa-angle-right"></i><span>Fullcalendar</span></a></li>
+                <li><a class="m-link" href="plugin-countup.html"><i class="fa fa-angle-right"></i><span>CountUp</span></a></li>
+                <li><a class="m-link" href="plugin-imagecropper.html"><i class="fa fa-angle-right"></i><span>Cropper</span></a></li>
+                <li><a class="m-link" href="plugin-tabledragger.html"><i class="fa fa-angle-right"></i><span>Table Dragger</span></a></li>
+                <li><a class="m-link" href="plugin-x-editable.html"><i class="fa fa-angle-right"></i><span>X-editable</span></a></li>
+                <li><a class="m-link" href="plugin-swiper.html"><i class="fa fa-angle-right"></i><span>Swiper</span></a></li>
+            </ul>
+            <!-- sidebar: Components -->
+            <ul class="menu-list pb-4">
+                <li class="divider py-2 lh-sm"><span class="text-primary small fw-bold text-uppercase">Components</span><br><small class="text-muted">Bootstrap 5 Components</small></li>
+                <li><a class="m-link" href="ui-alerts.html"><i class="fa fa-angle-right"></i>Alerts</a></li>
+                <li><a class="m-link" href="ui-avatar.html"><i class="fa fa-angle-right"></i>Avatar</a></li>
+                <li><a class="m-link" href="ui-badge.html"><i class="fa fa-angle-right"></i>Badge</a></li>
+                <li><a class="m-link" href="ui-border.html"><i class="fa fa-angle-right"></i>Borders</a></li>
+                <li><a class="m-link" href="ui-breadcrumb.html"><i class="fa fa-angle-right"></i>Breadcrumb</a></li>
+                <li><a class="m-link active" href="ui-buttons.html"><i class="fa fa-angle-right"></i>Buttons</a></li>
+                <li><a class="m-link" href="ui-card.html"><i class="fa fa-angle-right"></i>Card</a></li>
+                <li><a class="m-link" href="ui-carousel.html"><i class="fa fa-angle-right"></i>Carousel</a></li>
+                <li><a class="m-link" href="ui-collapse.html"><i class="fa fa-angle-right"></i>Collapse</a></li>
+                <li><a class="m-link" href="ui-dropdowns.html"><i class="fa fa-angle-right"></i>Dropdowns</a></li>
+                <li><a class="m-link" href="ui-listgroup.html"><i class="fa fa-angle-right"></i>List group</a></li>
+                <li><a class="m-link" href="ui-modal.html"><i class="fa fa-angle-right"></i>Modal</a></li>
+                <li><a class="m-link" href="ui-navbar.html"><i class="fa fa-angle-right"></i>Navbar</a></li>
+                <li><a class="m-link" href="ui-navs.html"><i class="fa fa-angle-right"></i>Navs</a></li>
+                <li><a class="m-link" href="ui-pagination.html"><i class="fa fa-angle-right"></i>Pagination</a></li>
+                <li><a class="m-link" href="ui-popovers.html"><i class="fa fa-angle-right"></i>Popovers</a></li>
+                <li><a class="m-link" href="ui-progress.html"><i class="fa fa-angle-right"></i>Progress</a></li>
+                <li><a class="m-link" href="ui-scrollspy.html"><i class="fa fa-angle-right"></i>Scrollspy</a></li>
+                <li><a class="m-link" href="ui-spinners.html"><i class="fa fa-angle-right"></i>Spinners</a></li>
+                <li><a class="m-link" href="ui-toasts.html"><i class="fa fa-angle-right"></i>Toasts</a></li>
+                <li><a class="m-link" href="ui-tooltips.html"><i class="fa fa-angle-right"></i>Tooltips</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- start: body area -->
+    <div class="wrapper">
+
+        <!-- start: page header -->
+        <header class="page-header sticky-top px-xl-4 px-sm-2 px-0 py-lg-2 py-1">
+            <div class="container">
+
+                <nav class="navbar">
+                    <!-- start: toggle btn -->
+                    <div class="d-flex">
+                        <button type="button" class="btn btn-link d-block d-xl-none menu-toggle ps-0 text-primary">
+                            <span><i class="fa fa-navicon"></i></span>
+                        </button>
+                        <a href="index.html" class="brand-icon d-flex align-items-center me-1 me-sm-3 me-lg-4 text-primary">
+                            <span class="fs-4 fw-bold">Doc<span class="d-lg-inline-block d-none">umentation</span>
+                        </a>
+                    </div>
+                    <!-- start: search area -->
+                    <div class="header-left flex-grow-1 d-none d-md-block">
+                        <div class="main-search px-3 flex-fill">
+                            <input class="form-control" type="text" placeholder="Enter your search key word">
+                            <div class="card shadow rounded-4 search-result slidedown">
+                                <div class="card-body">
+                                    <small class="text-uppercase text-muted">Recent searches</small>
+                                    <div class="d-flex flex-wrap align-items-start mt-2 mb-4">
+                                        <a class="small rounded py-1 px-2 m-1 fw-normal bg-primary text-white" href="../dist/dashboard-fitness.html">Fitness Analytics</a>
+                                        <a class="small rounded py-1 px-2 m-1 fw-normal bg-danger text-white" href="../dist/dashboard-job.html">job Portal</a>
+                                        <a class="small rounded py-1 px-2 m-1 fw-normal bg-secondary text-white" href="../dist/dashboard-crypto.html">Cryptocurrency</a>
+                                        <a class="small rounded py-1 px-2 m-1 fw-normal bg-success text-white" href="../dist/app-calendar-tui.html">Tui Calendar</a>
+                                        <a class="small rounded py-1 px-2 m-1 fw-normal bg-warning text-white" href="../dist/app-campaigns.html">Campaigns</a>
+                                        <a class="small rounded py-1 px-2 m-1 fw-normal bg-dark text-white" href="../dist/app-blog.html">Blog</a>
+                                        <a class="small rounded py-1 px-2 m-1 fw-normal bg-info text-white" href="../dist/page-bookmark.html">Bookmarks</a>
+                                    </div>
+                                    <small class="text-uppercase text-muted">Suggestions</small>
+                                    <div class="card list-group list-group-flush list-group-custom mt-2">
+                                        <a class="list-group-item list-group-item-action text-truncate" href="doc-helperclass.html">
+                                            <div class="fw-bold">Helper Class</div>
+                                            <small class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action text-truncate" href="element-daterange.html">
+                                            <div class="fw-bold">Date Range Picker</div>
+                                            <small class="text-muted">There are many variations of passages of Lorem Ipsum available</small>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action text-truncate" href="element-imageinput.html">
+                                            <div class="fw-bold">Image Input</div>
+                                            <small class="text-muted">It is a long established fact that a reader will be distracted</small>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action text-truncate" href="plugin-table.html">
+                                            <div class="fw-bold">DataTables for jQuery</div>
+                                            <small class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action text-truncate" href="doc-setup.html">
+                                            <div class="fw-bold">Development Setup</div>
+                                            <small class="text-muted">Contrary to popular belief, Lorem Ipsum is not simply random text.</small>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- start: link -->
+                    <div class="h-right justify-content-end d-flex align-items-center">
+                        <a class="btn btn-light" href="https://www.wrraptheme.com/templates/luno/marketing/"><i class="fa fa-external-link me-2"></i>Preview</a>
+                        <a class="btn btn-danger mx-2" href="https://themeforest.net/item/luno-bootstrap-5-responsive-admin-dashboard-template/36214125"><i class="fa fa-download me-2"></i>Download</a>
+                        <a class="btn btn-light" href="#" data-bs-toggle="modal" data-bs-target="#SettingsModal" title="Settings"><i class="fa fa-gear"></i></a>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+
+        <!-- start: page toolbar -->
+        <div class="page-toolbar px-xl-4 px-sm-2 px-0 py-3">
+            <div class="container">
+
+                <div class="row mb-3 align-items-center">
+                    <div class="col">
+                        <ol class="breadcrumb bg-transparent mb-0">
+                            <li class="breadcrumb-item"><a class="text-secondary" href="../dist/index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-secondary" href="index.html">Documentation</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Buttons</li>
+                        </ol>
+                    </div>
+                    <div class="col text-lg-end">
+                        <a class="btn btn-primary" href="ui-breadcrumb.html"><i class="fa fa-long-arrow-left me-2"></i>Bootstrap breadcrumb</a>
+                        <a class="btn btn-secondary" href="ui-card.html">Bootstrap card<i class="fa fa-long-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- start: page body -->
+        <div class="page-body px-xl-4 px-sm-2 px-0 py-lg-2 py-1 mt-3">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card mb-4 shadow-sm border-0">
+                            <div class="card-body">
+                                <ul class="nav nav-tabs tab-page-toolbar rounded d-inline-flex" role="tablist">
+                                    <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#btn-normal" role="tab">Buttons</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#btn-group" role="tab">Buttons Groups</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="btn-normal" role="tabpanel">
+                                <div class="row justify-content-between">
+                                    <div class="col-lg-8 col-sm-12">
+
+                                        <h2 id="examples">Examples</h2>
+                                        <p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+                                        <div class="bd-example mb-5">
+                                            <button type="button" class="btn btn-primary">Primary</button>
+                                            <button type="button" class="btn btn-secondary">Secondary</button>
+                                            <button type="button" class="btn btn-success">Success</button>
+                                            <button type="button" class="btn btn-danger">Danger</button>
+                                            <button type="button" class="btn btn-warning">Warning</button>
+                                            <button type="button" class="btn btn-info">Info</button>
+                                            <button type="button" class="btn btn-light">Light</button>
+                                            <button type="button" class="btn btn-dark">Dark</button>
+                                            
+                                            <button type="button" class="btn btn-link">Link</button>
+                                            <div class="mt-1">
+                                                <button type="button" class="btn btn-light-primary">Primary</button>
+                                                <button type="button" class="btn btn-light-secondary">Secondary</button>
+                                                <button type="button" class="btn btn-light-success">Success</button>
+                                                <button type="button" class="btn btn-light-danger">Danger</button>
+                                                <button type="button" class="btn btn-light-warning">Warning</button>
+                                                <button type="button" class="btn btn-light-info">Info</button>
+                                            </div>
+<pre>
+<code class="language-html" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-light&quot;&gt;Light&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-light-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-light-secondary&quot;&gt;Secondary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-light-success&quot;&gt;Success&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-light-danger&quot;&gt;Danger&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-light-warning&quot;&gt;Warning&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-light-info&quot;&gt;Info&lt;/button&gt;</code></pre>
+                                        </div>
+                                        
+                                        <div class="bd-callout bd-callout-info">
+                                            <h5 id="conveying-meaning-to-assistive-technologies">Conveying meaning to assistive technologies</h5>
+                                            <p>Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (e.g. the visible text), or is included through alternative means, such as additional text hidden with the <code>.visually-hidden</code> class.</p>
+                                        </div>
+                                        
+                                        <h2 id="disable-text-wrapping">Disable text wrapping</h2>
+                                        <p>If you don’t want the button text to wrap, you can add the <code>.text-nowrap</code> class to the button. In Sass, you can set <code>$btn-white-space: nowrap</code> to disable text wrapping for each button.</p>
+                                        <h2 id="button-tags">Button tags<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#button-tags" style="padding-left: 0.375em;"></a></h2>
+                                        <p>The <code>.btn</code> classes are designed to be used with the <code>&lt;button&gt;</code> element. However, you can also use these classes on <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements (though some browsers may apply a slightly different rendering).</p>
+                                        <p>When using button classes on <code>&lt;a&gt;</code> elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a <code>role="button"</code> to appropriately convey their purpose to assistive technologies such as screen readers.</p>
+                                        <div class="bd-example mb-5">
+                                            <a class="btn btn-primary" href="#" role="button">Link</a>
+                                            <button class="btn btn-primary" type="submit">Button</button>
+                                            <input class="btn btn-primary" type="button" value="Input">
+                                            <input class="btn btn-primary" type="submit" value="Submit">
+                                            <input class="btn btn-primary" type="reset" value="Reset">
+<pre>
+<code class="language-html" data-lang="html">&lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Link&lt;/a&gt;
+&lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Button&lt;/button&gt;
+&lt;input class=&quot;btn btn-primary&quot; type=&quot;button&quot; value=&quot;Input&quot;&gt;
+&lt;input class=&quot;btn btn-primary&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+&lt;input class=&quot;btn btn-primary&quot; type=&quot;reset&quot; value=&quot;Reset&quot;&gt;</code></pre>
+                                        </div>
+
+
+                                        <h2 id="outline-buttons">Outline buttons</h2>
+                                        <p>In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the <code>.btn-outline-*</code> ones to remove all background images and colors on any button.</p>
+                                        <div class="bd-example mb-5">
+                                        
+                                            <button type="button" class="btn btn-outline-primary">Primary</button>
+                                            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                            <button type="button" class="btn btn-outline-success">Success</button>
+                                            <button type="button" class="btn btn-outline-danger">Danger</button>
+                                            <button type="button" class="btn btn-outline-warning">Warning</button>
+                                            <button type="button" class="btn btn-outline-info">Info</button>
+                                            <button type="button" class="btn btn-outline-light">Light</button>
+                                            <button type="button" class="btn btn-outline-dark">Dark</button>
+
+<pre>
+<code class="language-html" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;Secondary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-success&quot;&gt;Success&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-danger&quot;&gt;Danger&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-warning&quot;&gt;Warning&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-info&quot;&gt;Info&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-light&quot;&gt;Light&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-dark&quot;&gt;Dark&lt;/button&gt;</code></pre>
+                                        </div>
+
+                                        <h2 id="sizes">Sizes</h2>
+                                        <p>Fancy larger or smaller buttons? Add <code>.btn-lg</code> or <code>.btn-sm</code> for additional sizes.</p>
+                                        <div class="bd-example mb-2">
+                                            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                                            <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+<pre>
+<code class="language-html" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;Large button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary btn-lg&quot;&gt;Large button&lt;/button&gt;</code></pre>
+                                        </div>                            
+                                        <div class="bd-example mb-5">
+                                            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                                            <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+<pre>
+<code class="language-html" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Small button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary btn-sm&quot;&gt;Small button&lt;/button&gt;</code></pre>
+                                        </div>
+                                        
+                                        <p>Create block level buttons—those that span the full width of a parent—by adding <code>.btn-block</code>.</p>
+                                        <div class="bd-example mb-5">
+                                            <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                                            <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+<pre>
+<code class="language-html" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg btn-block&quot;&gt;Block level button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary btn-lg btn-block&quot;&gt;Block level button&lt;/button&gt;</code></pre>
+                                        </div>
+                                        
+                                        <h2 id="disabled-state">Disabled state</h2>
+                                        <p>Make buttons look inactive by adding the <code>disabled</code> boolean attribute to any <code>&lt;button&gt;</code> element. Disabled buttons have <code>pointer-events: none</code> applied to, preventing hover and active states from triggering.</p>
+                                        <div class="bd-example mb-5">
+                                            <button type="button" class="btn btn-lg btn-primary" disabled="">Primary button</button>
+                                            <button type="button" class="btn btn-secondary btn-lg" disabled="">Button</button>
+<pre>
+<code class="language-html" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-lg btn-primary&quot; disabled=&quot;&quot;&gt;Primary button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary btn-lg&quot; disabled=&quot;&quot;&gt;Button&lt;/button&gt;</code></pre>
+                                        </div>
+                                        
+                                        <p>Disabled buttons using the <code>&lt;a&gt;</code> element behave a bit different:</p>
+                                        <ul>
+                                            <li><code>&lt;a&gt;</code>s don’t support the <code>disabled</code> attribute, so you must add the <code>.disabled</code> class to make it visually appear disabled.</li>
+                                            <li>Some future-friendly styles are included to disable all <code>pointer-events</code> on anchor buttons.</li>
+                                            <li>Disabled buttons should include the <code>aria-disabled="true"</code> attribute to indicate the state of the element to assistive technologies.</li>
+                                        </ul>
+                                        <div class="bd-example mb-5">
+                                            <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+                                            <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
+<pre>
+<code class="language-html" data-lang="html">&lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-lg disabled&quot; tabindex=&quot;-1&quot; role=&quot;button&quot; aria-disabled=&quot;true&quot;&gt;Primary link&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-lg disabled&quot; tabindex=&quot;-1&quot; role=&quot;button&quot; aria-disabled=&quot;true&quot;&gt;Link&lt;/a&gt;</code></pre>
+                                        </div>
+
+                                        
+                                        <div class="bd-callout bd-callout-warning">
+                                            <h5 id="link-functionality-caveat">Link functionality caveat</h5>
+                                            <p>The <code>.disabled</code> class uses <code>pointer-events: none</code> to try to disable the link functionality of <code>&lt;a&gt;</code>s, but that CSS property is not yet standardized. In addition, even in browsers that do support <code>pointer-events: none</code>, keyboard navigation remains unaffected, meaning that sighted keyboard users and users of assistive technologies will still be able to activate these links. So to be safe, in addition to <code>aria-disabled="true"</code>, also include a <code>tabindex="-1"</code> attribute on these links to prevent them from receiving keyboard focus, and use custom JavaScript to disable their functionality altogether.</p>
+                                        </div>
+                                        
+                                        <h2 id="button-plugin">Button plugin</h2>
+                                        <p>The button plugin allows you to create simple on/off toggle buttons.</p>
+                                        <div class="card p-md-4 p-2 mb-5 shadow-sm">
+                                            Visually, these toggle buttons are identical to the <a href="https://v5.getbootstrap.com/docs/5.0/forms/checks-radios/#checkbox-toggle-buttons">checkbox toggle buttons</a>. However, they are conveyed differently by assistive technologies: the checkbox toggles will be announced by screen readers as “checked”/“not checked” (since, despite their appearance, they are fundamentally still checkboxes), whereas these toggle buttons will be announced as “button”/“button pressed”. The choice between these two approaches will depend on the type of toggle you are creating, and whether or not the toggle will make sense to users when announced as a checkbox or as an actual button.
+                                        </div>
+                                        
+                                        <h3 id="toggle-states">Toggle states</h3>
+                                        <p>Add <code>data-bs-toggle="button"</code> to toggle a button’s <code>active</code> state. If you’re pre-toggling a button, you must manually add the <code>.active</code> class <strong>and</strong> <code>aria-pressed="true"</code> to ensure that it is conveyed appropriately to assistive technologies.</p>
+                                        <div class="bd-example mb-5">
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Toggle button</button>
+                                            <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Active toggle button</button>
+                                            <button type="button" class="btn btn-primary" disabled="" data-bs-toggle="button" autocomplete="off">Disabled toggle button</button>
+<pre>
+<code class="language-html" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;button&quot; autocomplete=&quot;off&quot;&gt;Toggle button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary active&quot; data-toggle=&quot;button&quot; autocomplete=&quot;off&quot; aria-pressed=&quot;true&quot;&gt;Active toggle button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; disabled=&quot;&quot; data-toggle=&quot;button&quot; autocomplete=&quot;off&quot;&gt;Disabled toggle button&lt;/button&gt;</code></pre>
+                                        </div>
+                                        
+                                        <div class="bd-example mb-5">
+                                            <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Toggle link</a>
+                                            <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a>
+                                            <a href="#" class="btn btn-primary disabled" tabindex="-1" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
+<pre>
+<code class="language-html" data-lang="html">&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot; data-toggle=&quot;button&quot;&gt;Toggle link&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-primary active&quot; role=&quot;button&quot; data-toggle=&quot;button&quot; aria-pressed=&quot;true&quot;&gt;Active toggle link&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-primary disabled&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; role=&quot;button&quot; data-toggle=&quot;button&quot;&gt;Disabled toggle link&lt;/a&gt;</code></pre>
+                                        </div>
+
+
+                                        <h3 id="methods">Methods</h3>
+                                        <p>You can create a button instance with the button constructor, for example:</p>
+                                        <div class="bd-example mb-5">
+<pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">button</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'myButton'</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">bsButton</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Button</span><span class="p">(</span><span class="nx">button</span><span class="p">)</span></code></pre>
+                                        </div>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Method</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><code>toggle</code></td>
+                                                    <td>Toggles push state. Gives the button the appearance that it has been activated.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>dispose</code></td>
+                                                    <td>Destroys an element's button.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>For example, to toggle all buttons</p>
+                                        <div class="bd-example mb-5">
+<pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">buttons</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">'.btn'</span><span class="p">)</span>
+<span class="nx">buttons</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">button</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">button</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Button</span><span class="p">(</span><span class="nx">button</span><span class="p">)</span>
+    <span class="nx">button</span><span class="p">.</span><span class="nx">toggle</span><span class="p">()</span>
+<span class="p">})</span>
+</code></pre>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-sm-12 d-none d-sm-block">
+                                        <div class="sticky-lg-top" style="top: 100px;">
+                                            <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                                            <nav>
+                                                <ul>
+                                                    <li><a href="#examples">Examples</a></li>
+                                                    <li><a href="#disable-text-wrapping">Disable text wrapping</a></li>
+                                                    <li><a href="#button-tags">Button tags</a></li>
+                                                    <li><a href="#outline-buttons">Outline buttons</a></li>
+                                                    <li><a href="#sizes">Sizes</a></li>
+                                                    <li><a href="#disabled-state">Disabled state</a></li>
+                                                    <li><a href="#button-plugin">Button plugin</a>
+                                                        <ul>
+                                                            <li><a href="#toggle-states">Toggle states</a></li>
+                                                            <li><a href="#methods">Methods</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div> <!-- Row end  -->
+                            </div>
+
+                            <div class="tab-pane fade" id="btn-group" role="tabpanel">
+                                <div class="row justify-content-between">
+                                    <div class="col-lg-8 col-sm-12">
+                                        <h2 id="basic-example">Basic example</h2>
+                                        <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
+                                        <div class="bd-example mb-5">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary">Left</button>
+                                                <button type="button" class="btn btn-primary">Middle</button>
+                                                <button type="button" class="btn btn-primary">Right</button>
+                                            </div>
+<pre>
+<code class="language-html" data-lang="html">&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Basic example&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Left&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Middle&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Right&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                                        </div>
+                                        
+                                        <div class="bd-callout bd-callout-warning">
+                                            <h5 id="ensure-correct-role-and-provide-a-label">Ensure correct <code>role</code> and provide a label</h5>
+                                            <p>In order for assistive technologies (such as screen readers) to convey that a series of buttons is grouped, an appropriate <code>role</code> attribute needs to be provided. For button groups, this would be <code>role="group"</code>, while toolbars should have a <code>role="toolbar"</code>.</p>
+                                            <p>In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct role attribute. In the examples provided here, we use <code>aria-label</code>, but alternatives such as <code>aria-labelledby</code> can also be used.</p>
+                                        </div>
+                                        
+                                        <p>These classes can also be added to groups of links, as an alternative to the <a href="/docs/5.0/components/navs/"><code>.nav</code> navigation components</a>.</p>
+                                        <div class="bd-example mb-5">
+                                            <div class="btn-group">
+                                                <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
+                                                <a href="#" class="btn btn-primary">Link</a>
+                                                <a href="#" class="btn btn-primary">Link</a>
+                                            </div>
+<pre>
+<code class="language-html" data-lang="html">&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary active&quot; aria-current=&quot;page&quot;&gt;Active link&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Link&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Link&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                                        </div>
+                                        
+                                        <h2 id="mixed-styles">Mixed styles</h2>
+                                        <div class="bd-example mb-5">
+                                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                                <button type="button" class="btn btn-danger">Left</button>
+                                                <button type="button" class="btn btn-warning">Middle</button>
+                                                <button type="button" class="btn btn-success">Right</button>
+                                            </div>
+<pre>
+<code class="language-html" data-lang="html">&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Basic mixed styles example&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Left&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Middle&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Right&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                                        </div>
+                                        
+                                        <h2 id="outlined-styles">Outlined styles</h2>
+                                        <div class="bd-example mb-5">
+                                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                                <button type="button" class="btn btn-outline-primary">Left</button>
+                                                <button type="button" class="btn btn-outline-primary">Middle</button>
+                                                <button type="button" class="btn btn-outline-primary">Right</button>
+                                            </div>
+<pre>
+<code class="language-html" data-lang="html">&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Basic outlined example&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary&quot;&gt;Left&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary&quot;&gt;Middle&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary&quot;&gt;Right&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                                        </div>
+                                        
+                                        <h2 id="checkbox-and-radio-button-groups">Checkbox and radio button groups</h2>
+                                        <p>Combine button-like checkbox and radio <a href="/docs/5.0/forms/checks-radios/">toggle buttons</a> into a seamless looking button group.</p>
+                                        <div class="bd-example mb-5">
+                                            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                                                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+                                            
+                                                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
+                                            
+                                                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
+                                            </div>
+<pre>
+<code class="language-html" data-lang="html">&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Basic checkbox toggle button group&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; class=&quot;btn-check&quot; id=&quot;btncheck1&quot; autocomplete=&quot;off&quot;&gt;
+    &lt;label class=&quot;btn btn-outline-primary&quot; for=&quot;btncheck1&quot;&gt;Checkbox 1&lt;/label&gt;
+
+    &lt;input type=&quot;checkbox&quot; class=&quot;btn-check&quot; id=&quot;btncheck2&quot; autocomplete=&quot;off&quot;&gt;
+    &lt;label class=&quot;btn btn-outline-primary&quot; for=&quot;btncheck2&quot;&gt;Checkbox 2&lt;/label&gt;
+
+    &lt;input type=&quot;checkbox&quot; class=&quot;btn-check&quot; id=&quot;btncheck3&quot; autocomplete=&quot;off&quot;&gt;
+    &lt;label class=&quot;btn btn-outline-primary&quot; for=&quot;btncheck3&quot;&gt;Checkbox 3&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                                        </div>                                    
+                                        <div class="bd-example mb-5">
+                                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked="">
+                                                <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+                                            
+                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+                                            
+                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+                                            </div>
+<pre>
+<code class="language-html" data-lang="html">&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Basic radio toggle button group&quot;&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;btn-check&quot; name=&quot;btnradio&quot; id=&quot;btnradio1&quot; autocomplete=&quot;off&quot; checked=&quot;&quot;&gt;
+    &lt;label class=&quot;btn btn-outline-primary&quot; for=&quot;btnradio1&quot;&gt;Radio 1&lt;/label&gt;
+
+    &lt;input type=&quot;radio&quot; class=&quot;btn-check&quot; name=&quot;btnradio&quot; id=&quot;btnradio2&quot; autocomplete=&quot;off&quot;&gt;
+    &lt;label class=&quot;btn btn-outline-primary&quot; for=&quot;btnradio2&quot;&gt;Radio 2&lt;/label&gt;
+
+    &lt;input type=&quot;radio&quot; class=&quot;btn-check&quot; name=&quot;btnradio&quot; id=&quot;btnradio3&quot; autocomplete=&quot;off&quot;&gt;
+    &lt;label class=&quot;btn btn-outline-primary&quot; for=&quot;btnradio3&quot;&gt;Radio 3&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                                        </div>                                    
+                                        
+                                        <h2 id="button-toolbar">Button toolbar</h2>
+                                        <p>Combine sets of button groups into button toolbars for more complex components. Use utility classes as needed to space out groups, buttons, and more.</p>
+                                        <div class="bd-example mb-5">
+                                            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                                <div class="btn-group me-2" role="group" aria-label="First group">
+                                                    <button type="button" class="btn btn-primary">1</button>
+                                                    <button type="button" class="btn btn-primary">2</button>
+                                                    <button type="button" class="btn btn-primary">3</button>
+                                                    <button type="button" class="btn btn-primary">4</button>
+                                                </div>
+                                                <div class="btn-group me-2" role="group" aria-label="Second group">
+                                                    <button type="button" class="btn btn-secondary">5</button>
+                                                    <button type="button" class="btn btn-secondary">6</button>
+                                                    <button type="button" class="btn btn-secondary">7</button>
+                                                </div>
+                                                <div class="btn-group" role="group" aria-label="Third group">
+                                                    <button type="button" class="btn btn-info">8</button>
+                                                </div>
+                                            </div>
+<pre>
+<code class="language-html" data-lang="html">&lt;div class=&quot;btn-toolbar&quot; role=&quot;toolbar&quot; aria-label=&quot;Toolbar with button groups&quot;&gt;
+    &lt;div class=&quot;btn-group me-2&quot; role=&quot;group&quot; aria-label=&quot;First group&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;1&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;2&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;3&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;4&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;btn-group me-2&quot; role=&quot;group&quot; aria-label=&quot;Second group&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;5&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;6&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;7&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Third group&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;8&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                        </div>
+                                        
+                                        <p>Feel free to mix input groups with button groups in your toolbars. Similar to the example above, you’ll likely need some utilities though to space things properly.</p>
+                                        <div class="bd-example mb-5">
+                                            <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                                                <div class="btn-group me-2" role="group" aria-label="First group">
+                                                    <button type="button" class="btn btn-outline-secondary">1</button>
+                                                    <button type="button" class="btn btn-outline-secondary">2</button>
+                                                    <button type="button" class="btn btn-outline-secondary">3</button>
+                                                    <button type="button" class="btn btn-outline-secondary">4</button>
+                                                </div>
+                                                <div class="input-group">
+                                                    <div class="input-group-text" id="btnGroupAddon">@</div>
+                                                    <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                <div class="btn-group" role="group" aria-label="First group">
+                                                    <button type="button" class="btn btn-outline-secondary">1</button>
+                                                    <button type="button" class="btn btn-outline-secondary">2</button>
+                                                    <button type="button" class="btn btn-outline-secondary">3</button>
+                                                    <button type="button" class="btn btn-outline-secondary">4</button>
+                                                </div>
+                                                    <div class="input-group">
+                                                    <div class="input-group-text" id="btnGroupAddon2">@</div>
+                                                    <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon2">
+                                                </div>
+                                            </div>
+<pre>
+<code class="language-html" data-lang="html">&lt;div class=&quot;btn-toolbar mb-3&quot; role=&quot;toolbar&quot; aria-label=&quot;Toolbar with button groups&quot;&gt;
+    &lt;div class=&quot;btn-group me-2&quot; role=&quot;group&quot; aria-label=&quot;First group&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;1&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;2&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;3&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;4&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+        &lt;div class=&quot;input-group-text&quot; id=&quot;btnGroupAddon&quot;&gt;@&lt;/div&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Input group example&quot; aria-label=&quot;Input group example&quot; aria-describedby=&quot;btnGroupAddon&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;btn-toolbar justify-content-between&quot; role=&quot;toolbar&quot; aria-label=&quot;Toolbar with button groups&quot;&gt;
+    &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;First group&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;1&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;2&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;3&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;4&lt;/button&gt;
+    &lt;/div&gt;
+        &lt;div class=&quot;input-group&quot;&gt;
+        &lt;div class=&quot;input-group-text&quot; id=&quot;btnGroupAddon2&quot;&gt;@&lt;/div&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Input group example&quot; aria-label=&quot;Input group example&quot; aria-describedby=&quot;btnGroupAddon2&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                        </div>
+                                        
+                                        <h2 id="sizing">Sizing</h2>
+                                        <p>Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to each <code>.btn-group</code>, including each one when nesting multiple groups.</p>
+                                        <div class="bd-example mb-5">
+                                            <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+                                                <button type="button" class="btn btn-outline-dark">Left</button>
+                                                <button type="button" class="btn btn-outline-dark">Middle</button>
+                                                <button type="button" class="btn btn-outline-dark">Right</button>
+                                            </div>
+                                            <div class="mt-2"></div>
+                                            <div class="btn-group" role="group" aria-label="Default button group">
+                                                <button type="button" class="btn btn-outline-dark">Left</button>
+                                                <button type="button" class="btn btn-outline-dark">Middle</button>
+                                                <button type="button" class="btn btn-outline-dark">Right</button>
+                                            </div>
+                                            <div class="mt-2"></div>
+                                            <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                                                <button type="button" class="btn btn-outline-dark">Left</button>
+                                                <button type="button" class="btn btn-outline-dark">Middle</button>
+                                                <button type="button" class="btn btn-outline-dark">Right</button>
+                                            </div>
+<pre>
+<code class="language-html" data-lang="html">&lt;div class=&quot;btn-group btn-group-lg&quot; role=&quot;group&quot; aria-label=&quot;Large button group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-dark&quot;&gt;Left&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-dark&quot;&gt;Middle&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-dark&quot;&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Default button group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-dark&quot;&gt;Left&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-dark&quot;&gt;Middle&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-dark&quot;&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class=&quot;btn-group btn-group-sm&quot; role=&quot;group&quot; aria-label=&quot;Small button group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-dark&quot;&gt;Left&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-dark&quot;&gt;Middle&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-dark&quot;&gt;Right&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                                        </div>
+                                        
+                                        <h2 id="nesting">Nesting</h2>
+                                        <p>Place a <code>.btn-group</code> within another <code>.btn-group</code> when you want dropdown menus mixed with a series of buttons.</p>
+                                        <div class="bd-example mb-5">
+                                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                                <button type="button" class="btn btn-primary">1</button>
+                                                <button type="button" class="btn btn-primary">2</button>
+                                            
+                                                <div class="btn-group" role="group">
+                                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Dropdown
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+<pre>
+<code class="language-html" data-lang="html">&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Button group with nested dropdown&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;1&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;2&lt;/button&gt;
+
+    &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+        &lt;button id=&quot;btnGroupDrop1&quot; type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+            Dropdown
+        &lt;/button&gt;
+        &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;btnGroupDrop1&quot;&gt;
+            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                        </div>
+                                        
+                                        <h2 id="vertical-variation">Vertical variation<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#vertical-variation" style="padding-left: 0.375em;"></a></h2>
+                                        <p>Make a set of buttons appear vertically stacked rather than horizontally. <strong>Split button dropdowns are not supported here.</strong></p>
+                                        <div class="bd-example mb-5">
+                                            <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                                                <button type="button" class="btn btn-dark">Button</button>
+                                                <button type="button" class="btn btn-dark">Button</button>
+                                                <button type="button" class="btn btn-dark">Button</button>
+                                                <button type="button" class="btn btn-dark">Button</button>
+                                                <button type="button" class="btn btn-dark">Button</button>
+                                                <button type="button" class="btn btn-dark">Button</button>
+                                            </div>
+<pre>
+<code class="language-html" data-lang="html">&lt;div class=&quot;btn-group-vertical&quot; role=&quot;group&quot; aria-label=&quot;Vertical button group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;Button&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;Button&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;Button&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;Button&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;Button&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;Button&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                                        </div>
+
+                                        <div class="bd-example mb-5">
+                                            <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                                                <button type="button" class="btn btn-primary">Button</button>
+                                                <button type="button" class="btn btn-primary">Button</button>
+                                                <div class="btn-group" role="group">
+                                                    <button id="btnGroupVerticalDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Dropdown
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
+                                                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                                    </ul>
+                                                </div>
+                                                <button type="button" class="btn btn-primary">Button</button>
+                                                <button type="button" class="btn btn-primary">Button</button>
+                                                <div class="btn-group" role="group">
+                                                    <button id="btnGroupVerticalDrop2" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Dropdown
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop2">
+                                                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="btn-group" role="group">
+                                                    <button id="btnGroupVerticalDrop3" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Dropdown
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop3">
+                                                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="btn-group" role="group">
+                                                    <button id="btnGroupVerticalDrop4" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Dropdown
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop4">
+                                                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                                        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+<pre>
+<code class="language-html" data-lang="html">&lt;div class=&quot;btn-group-vertical&quot; role=&quot;group&quot; aria-label=&quot;Vertical button group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Button&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Button&lt;/button&gt;
+    &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+        &lt;button id=&quot;btnGroupVerticalDrop1&quot; type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+            Dropdown
+        &lt;/button&gt;
+        &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;btnGroupVerticalDrop1&quot;&gt;
+            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Button&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Button&lt;/button&gt;
+    &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+        &lt;button id=&quot;btnGroupVerticalDrop2&quot; type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+            Dropdown
+        &lt;/button&gt;
+        &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;btnGroupVerticalDrop2&quot;&gt;
+            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+        &lt;button id=&quot;btnGroupVerticalDrop3&quot; type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+            Dropdown
+        &lt;/button&gt;
+        &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;btnGroupVerticalDrop3&quot;&gt;
+            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+        &lt;button id=&quot;btnGroupVerticalDrop4&quot; type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+            Dropdown
+        &lt;/button&gt;
+        &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;btnGroupVerticalDrop4&quot;&gt;
+            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                        </div>
+                                        <div class="bd-example">
+                                            <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
+                                                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked="">
+                                                <label class="btn btn-outline-danger" for="vbtn-radio1">Radio 1</label>
+                                                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+                                                <label class="btn btn-outline-danger" for="vbtn-radio2">Radio 2</label>
+                                                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+                                                <label class="btn btn-outline-danger" for="vbtn-radio3">Radio 3</label>
+                                            </div>
+<pre>
+<code class="language-html" data-lang="html">&lt;div class=&quot;btn-group-vertical&quot; role=&quot;group&quot; aria-label=&quot;Vertical radio toggle button group&quot;&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;btn-check&quot; name=&quot;vbtn-radio&quot; id=&quot;vbtn-radio1&quot; autocomplete=&quot;off&quot; checked=&quot;&quot;&gt;
+    &lt;label class=&quot;btn btn-outline-danger&quot; for=&quot;vbtn-radio1&quot;&gt;Radio 1&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;btn-check&quot; name=&quot;vbtn-radio&quot; id=&quot;vbtn-radio2&quot; autocomplete=&quot;off&quot;&gt;
+    &lt;label class=&quot;btn btn-outline-danger&quot; for=&quot;vbtn-radio2&quot;&gt;Radio 2&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;btn-check&quot; name=&quot;vbtn-radio&quot; id=&quot;vbtn-radio3&quot; autocomplete=&quot;off&quot;&gt;
+    &lt;label class=&quot;btn btn-outline-danger&quot; for=&quot;vbtn-radio3&quot;&gt;Radio 3&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-sm-12 d-none d-sm-block">
+                                        <div class="sticky-lg-top"  style="top: 100px;">
+                                            <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                                            <nav>
+                                                <ul>
+                                                    <li><a href="#basic-example">Basic example</a></li>
+                                                    <li><a href="#mixed-styles">Mixed styles</a></li>
+                                                    <li><a href="#outlined-styles">Outlined styles</a></li>
+                                                    <li><a href="#checkbox-and-radio-button-groups">Checkbox and radio button groups</a></li>
+                                                    <li><a href="#button-toolbar">Button toolbar</a></li>
+                                                    <li><a href="#sizing">Sizing</a></li>
+                                                    <li><a href="#nesting">Nesting</a></li>
+                                                    <li><a href="#vertical-variation">Vertical variation</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div> <!-- Row end  -->
+                                </div> <!-- Row end  -->
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- .row end -->
+
+                <!-- start: navigation btn -->
+                <div class="row g-3 mt-3">
+                    <div class="col-12">
+                        <a class="btn lift btn-lg rounded-4 btn-primary" href="ui-breadcrumb.html"><i class="fa fa-long-arrow-left me-3"></i>Bootstrap breadcrumb</a>
+                        <a class="btn lift btn-lg rounded-4 btn-secondary" href="ui-card.html">Bootstrap card<i class="fa fa-long-arrow-right ms-3"></i></a>
+                    </div>
+                </div> <!-- .row end -->
+
+            </div>
+        </div>
+
+        <!-- start: page footer -->
+        <footer class="page-footer px-xl-4 px-sm-2 px-0 py-3">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center">
+                <p class="col-md-4 mb-0 text-muted">© 2022 <a href="https://www.thememakker.com/" target="_blank" title="ThemeMakker Infotech LLP">ThemeMakker</a>, All Rights Reserved.</p>
+                <a href="#" class="col-md-4 d-flex align-items-center justify-content-center my-3 my-lg-0 me-lg-auto">
+                    <svg height="18" viewBox="0 0 67 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="fill-muted" d="M0.863281 18.9997V1.14968H3.11328V16.9997H10.9133V18.9997H0.863281Z"/>
+                        <path class="fill-muted" d="M27.3045 12.6997C27.3045 13.933 27.0545 15.0497 26.5545 16.0497C26.0545 17.033 25.2878 17.8163 24.2545 18.3997C23.2378 18.9663 21.9378 19.2497 20.3545 19.2497C18.1378 19.2497 16.4462 18.6497 15.2795 17.4497C14.1295 16.233 13.5545 14.633 13.5545 12.6497V1.14968H15.8045V12.7247C15.8045 14.1747 16.1878 15.2997 16.9545 16.0997C17.7378 16.8997 18.9128 17.2997 20.4795 17.2997C21.5628 17.2997 22.4378 17.108 23.1045 16.7247C23.7878 16.3247 24.2878 15.783 24.6045 15.0997C24.9212 14.3997 25.0795 13.5997 25.0795 12.6997V1.14968H27.3045V12.6997Z"/>
+                        <path class="fill-secondary" d="M46.5286 0.765681C46.6246 0.82568 46.6726 0.92168 46.6726 1.05368L46.5466 18.6037C46.5466 18.8677 46.3906 18.9937 46.0786 18.9817H44.4586L33.1546 3.62768L33.1006 13.1677L37.5646 13.1857C37.6726 13.1857 37.7626 13.2217 37.8346 13.2937C37.9186 13.3657 37.9606 13.4617 37.9606 13.5817L37.9426 14.8957C37.9426 15.0157 37.9066 15.1237 37.8346 15.2197C37.7626 15.3037 37.6666 15.3457 37.5466 15.3457L31.3726 15.2917H31.3546C31.1026 15.2917 30.9706 15.1837 30.9586 14.9677L31.0666 0.98168C31.0666 0.849679 31.1026 0.74768 31.1746 0.675681C31.2586 0.59168 31.3666 0.555679 31.4986 0.56768H33.1726C33.3406 0.56768 33.4726 0.63368 33.5686 0.765681L44.4406 15.4177L44.5486 0.94568C44.5966 0.741679 44.7286 0.639679 44.9446 0.639679L46.2046 0.65768C46.3126 0.65768 46.4206 0.69368 46.5286 0.765681ZM39.7786 16.7857C39.8986 16.7977 39.9946 16.8397 40.0666 16.9117C40.1386 16.9717 40.1746 17.0677 40.1746 17.1997L40.1566 18.4957C40.1566 18.6157 40.1206 18.7237 40.0486 18.8197C39.9886 18.9037 39.8926 18.9457 39.7606 18.9457H31.3546C31.2346 18.9457 31.1386 18.9097 31.0666 18.8377C30.9946 18.7657 30.9586 18.6697 30.9586 18.5497V17.2357C30.9586 17.1157 30.9946 17.0137 31.0666 16.9297C31.1386 16.8337 31.2406 16.7857 31.3726 16.7857H35.5666C38.0266 16.7857 39.4306 16.7857 39.7786 16.7857Z"/>
+                        <path class="fill-muted" d="M66.0301 10.0497C66.0301 11.433 65.8551 12.6913 65.5051 13.8247C65.1551 14.9413 64.6301 15.908 63.9301 16.7247C63.2467 17.5413 62.3884 18.1663 61.3551 18.5997C60.3384 19.033 59.1551 19.2497 57.8051 19.2497C56.4051 19.2497 55.1884 19.033 54.1551 18.5997C53.1217 18.1497 52.2634 17.5247 51.5801 16.7247C50.8967 15.908 50.3884 14.933 50.0551 13.7997C49.7217 12.6663 49.5551 11.408 49.5551 10.0247C49.5551 8.19135 49.8551 6.59135 50.4551 5.22468C51.0551 3.85801 51.9634 2.79135 53.1801 2.02468C54.4134 1.25801 55.9634 0.87468 57.8301 0.87468C59.6134 0.87468 61.1134 1.25801 62.3301 2.02468C63.5467 2.77468 64.4634 3.84135 65.0801 5.22468C65.7134 6.59135 66.0301 8.19968 66.0301 10.0497ZM51.9301 10.0497C51.9301 11.5497 52.1384 12.8413 52.5551 13.9247C52.9717 15.008 53.6134 15.8413 54.4801 16.4247C55.3634 17.008 56.4717 17.2997 57.8051 17.2997C59.1551 17.2997 60.2551 17.008 61.1051 16.4247C61.9717 15.8413 62.6134 15.008 63.0301 13.9247C63.4467 12.8413 63.6551 11.5497 63.6551 10.0497C63.6551 7.79968 63.1884 6.04135 62.2551 4.77468C61.3217 3.49135 59.8467 2.84968 57.8301 2.84968C56.4801 2.84968 55.3634 3.14135 54.4801 3.72468C53.6134 4.29135 52.9717 5.11635 52.5551 6.19968C52.1384 7.26635 51.9301 8.54968 51.9301 10.0497Z"/>
+                    </svg>
+                </a>
+                <ul class="nav col-md-4 justify-content-center justify-content-lg-end">
+                    <li class="nav-item"><a href="https://themeforest.net/user/wrraptheme/portfolio" target="_blank" class="nav-link px-2 text-muted">Portfolio</a></li>
+                    <li class="nav-item"><a href="https://themeforest.net/licenses/standard" target="_blank" class="nav-link px-2 text-muted">licenses</a></li>
+                    <li class="nav-item"><a href="https://help.market.envato.com/hc/en-us" target="_blank" class="nav-link px-2 text-muted">Support</a></li>
+                    <li class="nav-item"><a href="https://themeforest.net/licenses/faq" target="_blank" class="nav-link px-2 text-muted">FAQs</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+    
+    <!-- Modal: Setting -->
+    <div class="modal fade" id="SettingsModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-vertical right-side modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <div class="px-xl-4 modal-header">
+                    <h5 class="modal-title">Theme Setting</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body custom_scroll">
+                    <!-- start: color setting -->
+                    <div class="card fieldset border border-primary p-3 setting-theme mb-4">
+                        <span class="fieldset-tile text-primary bg-card">Color Settings</span>
+                        <ul class="list-unstyled d-flex choose-skin mb-0">
+                            <li data-theme="black"><div class="black"></div></li>
+                            <li data-theme="indigo"><div class="indigo"></div></li>
+                            <li data-theme="blue" class="active"><div class="blue"></div></li>
+                            <li data-theme="cyan"><div class="cyan"></div></li>
+                            <li data-theme="green"><div class="green"></div></li>
+                            <li data-theme="orange"><div class="orange"></div></li>
+                            <li data-theme="blush"><div class="blush"></div></li>
+                            <li data-theme="red"><div class="red"></div></li>
+                            <li data-theme="dynamic"><div class="dynamic"><i class="fa fa-paint-brush"></i></div></li>
+                        </ul>
+                        <!-- Settings: Theme dynamics -->
+                        <div class="card fieldset border border-primary p-3 dt-setting mt-4">
+                            <span class="fieldset-tile text-primary bg-card">Dynamic Color Settings</span>
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <button id="primaryColorPicker" class="btn bg-primary avatar xs me-2"></button>
+                                            <label>Primary Color</label>
+                                        </li>
+                                        <li>
+                                            <button id="secondaryColorPicker" class="btn bg-secondary avatar xs me-2"></button>
+                                            <label>Secondary Color</label>
+                                        </li>
+                                        <li>
+                                            <button id="BodyColorPicker" class="btn btn-outline-secondary bg-body avatar xs me-2"></button>
+                                            <label>Site Background</label>
+                                        </li>
+                                        <li>
+                                            <button id="CardColorPicker" class="btn btn-outline-secondary bg-card avatar xs me-2"></button>
+                                            <label>Widget Background</label>
+                                        </li>
+                                        <li>
+                                            <button id="BorderColorPicker" class="btn btn-outline-secondary bg-card avatar xs me-2"></button>
+                                            <label>Border Color</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <button id="chartColorPicker1" class="btn chart-color1 avatar xs me-2"></button>
+                                            <label>Chart Color 1</label>
+                                        </li>
+                                        <li>
+                                            <button id="chartColorPicker2" class="btn chart-color2 avatar xs me-2"></button>
+                                            <label>Chart Color 2</label>
+                                        </li>
+                                        <li>
+                                            <button id="chartColorPicker3" class="btn chart-color3 avatar xs me-2"></button>
+                                            <label>Chart Color 3</label>
+                                        </li>
+                                        <li>
+                                            <button id="chartColorPicker4" class="btn chart-color4 avatar xs me-2"></button>
+                                            <label>Chart Color 4</label>
+                                        </li>
+                                        <li>
+                                            <button id="chartColorPicker5" class="btn chart-color5 avatar xs me-2"></button>
+                                            <label>Chart Color 5</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- start: Light/dark -->
+                    <div class="setting-mode mb-4">
+                        <h6 class="card-title">Light/Dark & Contrast Layout</h6>
+                        <div class="c_radio d-flex text-center">
+                            <label class="m-1 theme-switch" for="theme-switch">
+                                <input type="checkbox" id="theme-switch" />
+                                <span class="card p-2">
+                                    <img class="img-fluid" src="../dist/assets/images/dark-version.svg" alt="Dark Mode" />
+                                </span>
+                            </label>
+                            <label class="m-1 theme-dark" for="theme-switch-dark">
+                                <input type="checkbox" id="theme-switch-dark" />
+                                <span class="card p-2">
+                                    <img class="img-fluid" src="../dist/assets/images/dark-theme.svg" alt="Theme Dark Mode" />
+                                </span>
+                            </label>
+                            <label class="m-1 theme-high-contrast" for="theme-high-contrast">
+                                <input type="checkbox" id="theme-high-contrast"/>
+                                <span class="card p-2">
+                                    <img class="img-fluid" src="../dist/assets/images/high-version.svg" alt="High Contrast" />
+                                </span>
+                            </label>
+                            <label class="m-1 theme-rtl" for="theme-rtl">
+                                <input type="checkbox" id="theme-rtl"/>
+                                <span class="card p-2">
+                                    <img class="img-fluid" src="../dist/assets/images/rtl-version.svg" alt="RTL Mode!" />
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- start: Font setting -->
+                    <div class="setting-font mb-4">
+                        <h6 class="card-title">Google Font Settings</h6>
+                        <div class="c_radio d-flex text-center font_setting">
+                            <label class="m-1" for="font-opensans">
+                                <input type="radio" name="font" id="font-opensans" value="font-opensans" />
+                                <span class="card p-2">
+                                    <img class="img-fluid" src="../dist/assets/images/font-opensans.svg" alt="Dark Mode" />
+                                </span>
+                            </label>
+                            <label class="m-1" for="font-quicksand">
+                                <input type="radio" name="font" id="font-quicksand" value="font-quicksand" />
+                                <span class="card p-2">
+                                    <img class="img-fluid" src="../dist/assets/images/font-quicksand.svg" alt="Dark Mode" />
+                                </span>
+                            </label>
+                            <label class="m-1" for="font-nunito">
+                                <input type="radio" name="font" id="font-nunito" value="font-nunito" checked="" />
+                                <span class="card p-2">
+                                    <img class="img-fluid" src="../dist/assets/images/font-nunito.svg" alt="Dark Mode" />
+                                </span>
+                            </label>
+                            <label class="m-1" for="font-raleway">
+                                <input type="radio" name="font" id="font-raleway" value="font-raleway" />
+                                <span class="card p-2">
+                                    <img class="img-fluid" src="../dist/assets/images/font-raleway.svg" alt="Dark Mode" />
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- start: Extra setting -->
+                    <div class="setting-more mb-4">
+                        <h6 class="card-title">More Setting</h6>
+                        <ul class="list-group list-group-flush list-group-custom fs-6">
+                            <li class="list-group-item">
+                                <!-- Settings: page header  -->
+                                <div class="form-check form-switch pageheader-switch mb-1">
+                                    <input class="form-check-input" type="checkbox" id="PageHeader" checked>
+                                    <label class="form-check-label" for="PageHeader">Page Header Fix</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <!-- Settings: page header  -->
+                                <div class="form-check form-switch pageheader-dark-switch mb-1">
+                                    <input class="form-check-input" type="checkbox" id="PageHeader_dark">
+                                    <label class="form-check-label" for="PageHeader_dark">Page Header Dark Mode</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <!-- Settings: radius  -->
+                                <div class="form-check form-switch radius-switch mb-1">
+                                    <input class="form-check-input" type="checkbox" id="BorderRadius">
+                                    <label class="form-check-label" for="BorderRadius">Border Radius none</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <!-- Settings: sidebar dark -->
+                                <div class="form-check form-switch sidebardark-switch mb-1">
+                                    <input class="form-check-input" type="checkbox" id="SidebarDark" checked="">
+                                    <label class="form-check-label" for="SidebarDark">Enable Dark! ( Sidebar )</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <!-- Settings: sidebar dark -->
+                                <div class="form-check form-switch fluid-switch mb-1">
+                                    <input class="form-check-input" type="checkbox" id="fluidLayout">
+                                    <label class="form-check-label" for="fluidLayout">Container Fluid</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-start text-center">
+                    <button type="button" class="btn flex-fill btn-primary lift">Save Changes</button>
+                    <button type="button" class="btn flex-fill btn-white border lift" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!-- Jquery Core Js -->
+<script src="../dist/assets/bundles/libscripts.bundle.js"></script>
+
+<!-- Prism js file please do not add in your project -->
+<script src="../dist/assets/plugin/prismjs/prism.js"></script>
+
+<!-- Jquery Page Js -->
+
+</body>
+</html>

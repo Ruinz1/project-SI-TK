@@ -1,0 +1,83 @@
+// Admin Layout (LUNO)
+// @author: WrapTheme ( https://themeforest.net/user/wrraptheme )
+// @design by: ThemeMakker Infotech LLP.
+// @event-namespace: LUNO
+// Copyright 2022 WrapTheme
+
+.timeline-item {
+	border-left: 1px solid var(--border-color);
+    display: flex;
+	position: relative;
+	padding: 1em 1em 2em 1em;
+
+	@media only screen and (max-width: $break-small - 1px) {
+		padding: 1em 0 1em 1em;
+	}
+	
+	&:hover{
+		&::after{
+			height: calc(100% - 3em);
+		}
+	}
+
+	&::after {
+		@include transition(ease .3s);
+		background: var(--color-900);
+        display: block;
+        position: absolute;
+        content: '';
+        width: 3px;
+		height: 26px;
+		top: 1rem;
+		left: -2px;
+	}
+	&.ti-primary:after{
+		background: var(--chart-color1);
+	}
+	&.ti-info:after{
+		background: var(--chart-color2);
+	}
+	&.ti-success:after{
+		background: var(--chart-color3);
+	}
+	&.ti-warning:after{
+		background: var(--chart-color4);
+	}
+	&.ti-danger:after{
+		background: var(--chart-color5);
+	}
+}
+
+.timeline-activity{
+	border-left: 3px solid var(--secondary-color);
+    position: relative;
+	margin-left: 100px;
+
+	.activity{
+		position: relative;
+		&::before,
+		&::after{
+			position: absolute;
+    		display: block;
+		}
+
+		&:before{
+			content: attr(data-date);
+			text-align: right;
+			left: -120px;
+			font-size: 12px;
+			min-width: 100px;
+		}
+		&::after{
+			content: "";
+			-webkit-box-shadow: 0 0 0 3px var(--primary-color);
+			box-shadow: 0 0 0 3px var(--primary-color);
+			background: var(--card-color);
+			left: -6px;
+			border-radius: 10px;
+			height: 9px;
+			width: 9px;
+			top: 14px;
+		}
+	}
+}

@@ -1,0 +1,62 @@
+.landing-page{
+
+    // section: Header 
+    .section{
+        padding: 60px 0;
+
+        &.header{
+            background-color: var(--card-color);
+        }
+        &.header-2{
+            color: var(--white-color);
+            background-image: url("../images/fronend-uikit/hero-1-bg.jpg");
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            background-position: contain;
+
+            .brand-icon{
+                margin-right: 2rem;
+            }
+
+            .nav {
+                font-size: 1rem;
+                .nav-link{
+                    color: var(--white-color);
+                    &.active,
+                    &:hover{
+                        color: var(--secondary-color);
+                    }
+                }
+            }
+        }
+        &.header-3{
+            background-color: var(--card-color);
+        }
+        &.header-4{
+            background-color: var(--card-color);
+        }
+        &.header-5{
+            background-image: url("../images/fronend-uikit/hero-2-bg.jpg");
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            background-position: contain;
+
+            .brand-icon{
+                margin-right: 2rem;
+            }
+
+            .nav {
+                font-size: 1rem;
+                .nav-link{
+                    color: var(--white-color);
+                    &.active,
+                    &:hover{
+                        color: var(--secondary-color);
+                    }
+                }
+            }
+        }
+    }
+}

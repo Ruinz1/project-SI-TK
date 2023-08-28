@@ -1,0 +1,131 @@
+// Admin Layout (LUNO)
+// @author: WrapTheme ( https://themeforest.net/user/wrraptheme )
+// @design by: ThemeMakker Infotech LLP.
+// @event-namespace: LUNO
+// Copyright 2022 WrapTheme
+
+// Theme color variable
+[data-luno="theme-black"] {
+	--primary-color: 	#000000;
+	--secondary-color: 	#0c6b7a;
+
+	--primary-rgb: 72, 76, 127;
+
+	--chart-color1:	 	#000000;
+	--chart-color2: 	#A3CFCD;
+	--chart-color3: 	#82A0AA;
+	--chart-color4: 	#677381;
+	--chart-color5: 	#A3CFCD;
+
+	--primary-gradient: linear-gradient(145deg, var(--primary-color), var(--secondary-color));
+}
+[data-luno="theme-indigo"] {
+	--primary-color: 	#555CB8;
+	--secondary-color: 	#00C894;
+
+	--primary-rgb: 72, 76, 127;
+
+	--chart-color1:	 	#555CB8;
+	--chart-color2: 	#001C6B;
+	--chart-color3: 	#B6B4FF;
+	--chart-color4: 	#8F8CB8;
+	--chart-color5: 	#00C894;
+
+	--primary-gradient: linear-gradient(145deg, var(--primary-color), var(--secondary-color));
+}
+[data-luno="theme-blue"] {
+	--primary-color: 	#2794eb;
+	--secondary-color: 	#00AC9A;
+
+	--primary-rgb: 13, 110, 253;
+
+	--chart-color1:	 	#2794eb;
+	--chart-color2: 	#6382D8;
+	--chart-color3: 	#8D61A5;
+	--chart-color4: 	#90476F;
+	--chart-color5: 	#00AC9A;
+
+	--primary-gradient: linear-gradient(145deg, var(--primary-color), var(--secondary-color));
+}
+[data-luno="theme-cyan"] {
+	--primary-color: 	#11b396;
+	--secondary-color: 	#FFA17A;
+
+	--primary-rgb: 0, 189, 170;
+
+	--chart-color1:	 	#22B89D;
+	--chart-color2: 	#295D70;
+	--chart-color3: 	#008A92;
+	--chart-color4: 	#95DF93;
+	--chart-color5: 	#FFA17A;
+
+	--primary-gradient: linear-gradient(145deg, var(--primary-color), var(--secondary-color));
+}
+[data-luno="theme-green"] {
+	--primary-color: 	#79B989;
+	--secondary-color: 	#ecbc7c;
+
+	--primary-rgb: 126, 185, 63;
+
+	--chart-color1:	 	#79B989;
+	--chart-color2: 	#7E8954;
+	--chart-color3: 	#91A7FB;
+	--chart-color4: 	#3FBCB8;
+	--chart-color5: 	#ecbc7c;
+
+	--primary-gradient: linear-gradient(145deg, var(--primary-color), var(--secondary-color));
+}
+[data-luno="theme-orange"] {
+	--primary-color: 	#FFA600;
+	--secondary-color: 	#00B4B7;
+
+	--primary-rgb: 254, 176, 25;
+
+	--chart-color1:	 	#FFA600;
+	--chart-color2: 	#FF8982;
+	--chart-color3: 	#FFC0B7;
+	--chart-color4: 	#CF7F00;
+	--chart-color5: 	#00B4B7;
+
+	--primary-gradient: linear-gradient(145deg, var(--primary-color), var(--secondary-color));
+}
+[data-luno="theme-blush"] {
+	--primary-color: 	#B9798F;
+	--secondary-color: 	#D86972;
+
+	--primary-rgb: 237, 87, 130;
+
+	--chart-color1:	 	#B9798F;
+	--chart-color2: 	#3F9994;
+	--chart-color3: 	#7077B2;
+	--chart-color4: 	#a6a6a4;
+	--chart-color5: 	#D86972;
+
+	--primary-gradient: linear-gradient(145deg, var(--primary-color), var(--secondary-color));
+}
+[data-luno="theme-red"] {
+	--primary-color: 	#E73957;
+	--secondary-color: 	#00989F;
+
+	--primary-rgb: 255, 69, 96;
+
+	--chart-color1:	 	#ff5959;
+	--chart-color2: 	#845865;
+	--chart-color3: 	#CA8398;
+	--chart-color4: 	#E1C7CE;
+	--chart-color5: 	#00989F;
+
+	--primary-gradient: linear-gradient(145deg, var(--primary-color), var(--secondary-color));
+}
+
+// dynamic Theme default color variable
+[data-luno="theme-dynamic"] {
+
+	--primary-rgb: 0, 189, 170;
+	
+	--primary-gradient: linear-gradient(145deg, var(--primary-color), var(--secondary-color));
+
+	.dt-setting{
+        display: block;
+    }
+}

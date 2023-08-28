@@ -1,0 +1,85 @@
+// Admin Layout (LUNO)
+// @author: WrapTheme ( https://themeforest.net/user/wrraptheme )
+// @design by: ThemeMakker Infotech LLP.
+// @event-namespace: LUNO
+// Copyright 2022 WrapTheme
+
+.inbox{
+    .menu-list{
+        .m-link{
+            color: var(--color-500);
+            display: flex;
+            align-items: center;
+            padding: 6px;
+
+            &:hover{
+                color: var(--primary-color);
+            }
+            i.fa{
+                width: 26px;
+            }
+        }
+    }
+    .fa-star{
+        color: var(--color-300);
+        &:hover,
+        &.active{
+            color: var(--primary-color);
+        }
+    }
+
+    .order-1{
+        background: var(--card-color);
+        height: calc(100vh - 77px);
+        min-width: 210px;
+        padding: 14px;
+        margin-top: 2px;
+        margin-left: 2px;
+    }
+
+    .order-2{
+        height: calc(100vh - 77px);
+
+        .list-group{
+            li{
+                &:first-child{
+                    border-radius: .75rem .75rem 0 0;
+                }
+                &:last-child{
+                    border-radius: 0 0 .75rem .75rem;
+                }
+                &:hover{
+                    .hover-actions{
+                        display: flex;
+                        justify-content: space-between;
+                    }    
+                }
+                .hover-actions{
+                    position: absolute;
+                    text-align: end;
+                    display: none;
+                    width: 135px;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: $break-medium) {
+        .order-1{
+            @include transition(ease .1s);
+            position: fixed;
+            box-shadow: 5px 1rem 1rem rgba($dark,.1);
+            left: -240px;
+            
+            &.open{
+                left: 0;
+                z-index: 99;
+            }
+        }
+        .order-1,
+        .order-2{
+            height: calc(100vh - 69px);
+        }
+    }
+}

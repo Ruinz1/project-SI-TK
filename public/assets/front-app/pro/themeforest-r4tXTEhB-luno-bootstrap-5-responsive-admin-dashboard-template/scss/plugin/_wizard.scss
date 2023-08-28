@@ -1,0 +1,457 @@
+// Admin Layout (LUNO)
+// @author: WrapTheme ( https://themeforest.net/user/wrraptheme )
+// @design by: ThemeMakker Infotech LLP.
+// @event-namespace: LUNO
+// Copyright 2022 WrapTheme
+
+// horizontal wizard
+.step-app {
+
+    // horizontal wizard demo 1
+    &.h-wizard-demo1{
+        > .step-steps {
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 0;
+            
+            > li {
+                background-color: transparent;
+                display: flex;
+                align-items: center;
+                flex: inherit;
+                outline: none;
+                font-size: 18px;
+                margin-right: 25px;
+                flex-grow: 0;
+                
+                &.active {
+                    background-color: transparent;
+                    color: var(--primary-color);
+                    span {
+                        background-color: var(--primary-color);
+                    }
+                }
+                &.done {
+                    background-color: transparent;
+                    color: var(--bs-green);
+                    span {
+                        background-color: var(--bs-green);
+                    }
+                }
+                &:hover {
+                    background-color: transparent;
+                }
+                span {
+                    background-color: var(--color-400);
+                    color: var(--white-color);
+                    padding: 0 12px;
+                    border-radius: .25rem;
+                    margin: 0 10px 0 0;
+                }
+            }
+        }
+        > .step-content {
+            margin-top: 30px;
+            border: 0;
+            padding: 0;
+        }
+        > .step-footer {
+            border-top: 1px solid var(--border-color);
+            justify-content: flex-end;
+            margin-bottom: 0;
+            padding-top: 15px;
+    
+            .btn {
+                margin: 5px;
+            }
+    
+            > .step-btn {
+                background-color: var(--primary-color);
+                border: 1px solid var(--primary-color);
+                color: var(--white-color);
+                padding: .375rem .75rem;
+                border-radius: .25rem;
+            }
+        }
+    }
+    // horizontal wizard demo 2
+    &.h-wizard-demo2{
+        > .step-steps {
+            border: 1px dashed var(--primary-color);
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: .25rem;
+            padding: 5px;
+            
+            > li {
+                background-color: rgba(var(--primary-rgb),.15);
+                outline: none;
+                font-size: 1rem;
+                &:first-child{
+                    border-radius: .25rem 0 0 .25rem;
+                }
+                &:last-child{
+                    border-radius: 0 .25rem .25rem 0;
+                }
+                
+                &.active,
+                &.done,
+                &:hover {
+                    background-color: var(--primary-color);
+                    color: $white;
+                }
+            }
+        }
+        > .step-content {
+            margin-top: 20px;
+            border: 0;
+            padding: 0;
+        }
+        > .step-footer {
+            justify-content: flex-end;
+            margin-top: 10;
+            margin-bottom: 0;
+
+            .btn {
+                margin: 0 2px;
+            }
+    
+            > .step-btn {
+                background-color: var(--secondary-color);
+                border: 1px solid var(--secondary-color);
+                color: var(--white-color);
+                text-transform: uppercase;
+                padding: .375rem .75rem;
+                border-radius: .25rem;
+            }
+        }
+    }
+    // horizontal wizard demo 3
+    &.h-wizard-demo3{
+        > .step-steps {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1.5rem;
+            border-radius: 0;
+            border-bottom: 1px dashed var(--border-color);
+            
+            > li {
+                background-color: transparent;
+                display: flex;
+                align-items: center;
+                flex: inherit;
+                outline: none;
+                font-size: 18px;
+                margin-right: 25px;
+                flex-grow: 0;
+                
+                &.active {
+                    color: var(--primary-color);
+                    span {
+                        background-color: var(--primary-color);
+                    }
+                }
+                &.done {
+                    color: var(--secondary-color);
+                    span {
+                        background-color: var(--secondary-color);
+                    }
+                }
+                span {
+                    background-color: var(--color-400);
+                    color: var(--white-color);
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    padding: 0;
+                    border-radius: 5rem;
+                    margin: 0 10px 0 0;
+                    height: 36px;
+                    width: 36px;
+                }
+            }
+        }
+        > .step-content {
+            padding: 1.5rem;
+            border: 0;
+        }
+        > .step-footer {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0 1.5rem 1.5rem 1.5rem;
+
+            .btn {
+                margin: 0 2px;
+            }
+    
+            > .step-btn {
+                background-color: var(--secondary-color);
+                border: 1px solid var(--secondary-color);
+                color: var(--white-color);
+                text-transform: uppercase;
+                padding: .375rem .75rem;
+                border-radius: 5rem;
+            }
+        }
+    }
+    // horizontal wizard demo 4
+    &.h-wizard-demo4{
+        > .step-steps {
+            position: relative;
+            flex-wrap: wrap;
+
+            &::after{
+                background: var(--border-color);
+                content: '';
+                position: absolute;
+                height: 2px;
+                width: 100%;
+                top: 32px;
+                left: 0;
+            }
+            
+            > li {
+                color: var(--color-400);
+                background-color: transparent;
+                position: relative;
+                align-items: center;
+                outline: none;
+                justify-content: center;
+                text-align: center;
+                z-index: 2;
+                border: 0;
+
+                &::after{
+                    background: var(--border-color);
+                    content: '';
+                    position: absolute;
+                    height: 2px;
+                    width: 50%;
+                    top: 32px;
+                    left: 0;
+                }
+                &.done,
+                &.active {
+                    color: var(--color-600);
+                    span {
+                        background: var(--primary-gradient);
+                        color: var(--white-color);
+                    }
+                    &::after{
+                        background: var(--primary-color);
+                    }
+                }
+                &.done {
+                    &::after{
+                        width: 100%;
+                    }
+                }
+                span {
+                    box-shadow: 0 0 10px rgba($dark, .15);
+                    background-color: var(--color-300);
+                    color: var(--color-400);
+                    align-items: center;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    margin: 0 auto;
+                    z-index: 3;
+                    border-radius: 5rem;
+                    height: 46px;
+                    width: 46px;
+                }
+            }
+        }
+        > .step-content {
+            background: var(--body-color);
+            padding: 1.5rem;
+            border-radius: .25rem;
+            border: 0;
+            margin: 1rem 0;
+        }
+        > .step-footer {
+            margin-top: 0;
+            margin-bottom: 0;
+
+            .btn {
+                margin: 0 2px;
+            }
+    
+            > .step-btn {
+                background-color: var(--secondary-color);
+                border: 1px solid var(--secondary-color);
+                color: var(--white-color);
+                text-transform: uppercase;
+                padding: .375rem .75rem;
+            }
+        }
+    }
+}
+
+// Vertical wizard
+.step-app{
+    &.v-wizard-demo1,
+    &.v-wizard-demo2{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    // Vertical wizard demo 1
+    &.v-wizard-demo1{
+
+        >.step-steps {
+            flex-direction: column;
+            min-width: 220px;
+            border-radius: 0;
+    
+            li {
+                flex: 0;
+                margin-bottom: 5px;
+                border: 0;
+    
+                &.done,
+                &.active{
+                    background-color: var(--primary-color);
+                }
+            }
+        }
+        >.step-content {
+            border: 1px solid var(--primary-color);
+            padding: 1.5rem;
+            width: 100%;
+        }
+        > .step-footer {
+            justify-content: flex-end;
+        }
+    }
+    // Vertical wizard demo 2
+    &.v-wizard-demo2{
+
+        >.step-steps {
+            background-color: var(--border-color);
+            flex-direction: column;
+            min-width: 250px;
+            border-radius: 0;
+            padding: 1rem 1.5rem;
+    
+            li {
+                position: relative;
+                background-color: transparent;
+                flex: 0;
+                margin: 0;
+                border: 0;
+                padding: 1rem 0;
+                
+                &:first-child{
+                    &::after{
+                        top: 50%;
+                    }    
+                }
+                &:last-child{
+                    &::after{
+                        top: 0;
+                        height: 50% !important;
+                    }    
+                }
+
+                &::after{
+                    background: var(--white-color);
+                    content: '';
+                    position: absolute;
+                    height: 100%;
+                    width: 2px;
+                    top: 0;
+                    left: 17px;
+                }
+    
+                &.done,
+                &.active {
+                    color: var(--color-600);
+                    span {
+                        background: var(--primary-color);
+                        color: var(--white-color);
+                    }
+                    &::after{
+                        background: var(--primary-color);
+                        height: 100%;
+                    }
+                }
+                span {
+                    background-color: var(--white-color);
+                    color: var(--color-400);
+                    align-items: center;
+                    display: inline-flex;
+                    justify-content: center;
+                    position: relative;
+                    z-index: 3;
+                    padding: 0;
+                    border-radius: 5rem;
+                    margin: 0 10px 0 0;
+                    height: 36px;
+                    width: 36px;
+                }
+            }
+        }
+        >.step-content {
+            border: 0;
+            padding: 1.5rem;
+            width: 100%;
+        }
+        > .step-footer {
+            justify-content: flex-end;
+        }
+    }
+}
+
+
+[data-theme="high-contrast"] {
+    .step-app{
+        &.h-wizard-demo1>.step-steps>li,
+        &.h-wizard-demo3>.step-steps>li{
+            color: #ffffff !important;
+            border: 0;
+            &.active {
+                span{
+                    color: #000000 !important;
+                }
+            }
+        }
+        &.h-wizard-demo2>.step-steps>li{
+            color: #ffffff !important;
+            &.active,
+            &:hover {
+                color: #000000 !important;
+                span{
+                    color: #000000 !important;
+                }
+            }
+        }
+        &.v-wizard-demo1>.step-steps li{
+            &.done{
+                color: #858585 !important;
+            }
+            &.active{
+                color: #000000 !important;
+            }
+        }
+        &.v-wizard-demo2>.step-steps{
+            background: transparent !important;
+            li.active{
+                color: #ffffff !important;
+                span{
+                    color: #000000 !important;
+                }
+            }
+            li.done {
+                span{
+                    color: #858585 !important;
+                }
+            }
+        }
+    }
+}

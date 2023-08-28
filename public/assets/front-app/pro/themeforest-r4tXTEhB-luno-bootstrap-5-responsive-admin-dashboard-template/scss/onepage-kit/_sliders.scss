@@ -1,0 +1,71 @@
+.landing-page{
+
+    // section: Sliders 
+    .section{
+        &.sliders{
+            .carousel-caption{
+                top: 28%;
+                right: 10%;
+                left: 10%;
+                text-shadow: none;
+            }
+        }
+        &.sliders-2{
+            background-color: var(--card-color);
+
+            .testimonial-wrap {
+                padding-left: 50px;
+                @media (max-width: 767px) {
+                    padding-left: 0px;
+                }
+            }
+            .testimonial-item {
+                border-left: 5px solid var(--primary-color);
+                box-sizing: content-box;
+                position: relative;
+                padding: 30px 30px 30px 40px;
+                margin: 30px 15px;
+                min-height: 200px;
+        
+                .testimonial-img {
+                    position: absolute;
+                    width: 80px;
+                    left: -70px;
+                    @media (max-width: 767px) {
+                        position: static;
+                        left: auto;
+                    }
+                }
+                @media (max-width: 767px) {
+                    padding: 30px;
+                    margin: 15px;
+                }
+            }
+            
+            .fa-quote-left,
+            .fa-quote-right {
+                font-size: 26px;
+            }
+        
+            .swiper-pagination {
+                position: relative;
+                margin-top: 20px;
+        
+                .swiper-pagination-bullet {
+                    background-color: var(--white-color);
+                    border: 1px solid var(--primary-color);
+                    width: 12px;
+                    height: 12px;
+                    opacity: 1;
+                }
+                .swiper-pagination-bullet-active {
+                    background-color: var(--primary-color);
+                }
+            }
+        }
+
+        &.sliders-3{
+            background-color: var(--card-color);
+        }
+    }
+}

@@ -1,0 +1,55 @@
+// Admin Layout (LUNO)
+// @author: WrapTheme ( https://themeforest.net/user/wrraptheme )
+// @design by: ThemeMakker Infotech LLP.
+// @event-namespace: LUNO
+// Copyright 2022 WrapTheme
+
+:root {
+	--dark-color: 		#262727;
+
+	--color-fff:		#FFFFFF;
+	--color-100:		#F0F0F0;
+	--color-200:		#EEEEEE;
+	--color-300:		#E0E0E0;
+	--color-400:		#BDBDBD;
+	--color-500:		#525252;
+	--color-600:		#464545;
+	--color-700:		#363535;
+	--color-800:		#252525;
+	--color-900:		#181818;
+	--color-000:		#000000;
+
+	--border-color:		#e9e6e1;
+	--card-color: 		#ffffff;
+	--body-color: 		#f8f6f2;
+	--white-color: 		#ffffff;
+	--sidebar-color:	#ffffff;
+
+	--primary-color: 	#191A1C;
+	--secondary-color: 	#837788;
+
+	--chart-color1:	 	#191A1C;
+	--chart-color2: 	#837788;
+	--chart-color3: 	#374765;
+	--chart-color4: 	#484261;
+	--chart-color5: 	#717788;
+
+	//--sidebar-img: 		url(../images/sidebar-bg/sidebar-1.jpg);
+	--sidebar-img: 		url(https://www.wrraptheme.com/templates/luno/dist/assets/images/sidebar-bg/sidebar-1.jpg);
+
+	[data-luno="theme-blush"] {
+		--body-color: 		#f9f4f4;
+		--card-color: 		#ffffff;
+	}
+	[data-luno="theme-blue"] {
+		--body-color: 		#f7f6f1;
+	}
+	[data-luno="theme-blue"] {
+		--body-color: 		#f4f7f6;
+	}
+}
+
+@import "themes";				// theme color blue, indigo, cyan more...
+@import "dark";					// theme dark version scss
+@import "themes-dark";			// theme color dark version like. blue with dark blue
+@import "high-contrast";		// theme high contrast verson 

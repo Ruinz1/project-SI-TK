@@ -1,0 +1,328 @@
+// Admin Layout (LUNO)
+// @author: WrapTheme ( https://themeforest.net/user/wrraptheme )
+// @design by: ThemeMakker Infotech LLP.
+// @event-namespace: LUNO
+// Copyright 2022 WrapTheme
+
+
+html{
+    // -webkit-user-select: none;
+    // -khtml-user-select: none;
+    // -moz-user-select: none;
+    // -o-user-select: none;
+    // user-select: none;
+}
+
+body {
+    @include transition(ease .1s);
+    @include fadeInAnimation('fadeInAnimation');
+    background-color: var(--body-color);
+    color: var(--color-600);
+    font-family: $font-family;
+    font-size: 16px;
+    direction: ltr;
+
+    &.font-opensans{
+        font-family: $font-opensans;
+    }
+    &.font-quicksand{
+        font-family: $font-quicksand;
+        font-size: 15px;
+    }
+    &.font-nunito{
+        font-family: $font-nunito;
+        font-size: 15px;
+    }
+    &.font-raleway{
+        font-family: $font-raleway;
+    }
+
+    &.radius-0{
+        .card,
+        .card .card-header,
+        .card .card-footer,
+        .more-icon,
+        .sidebar .menu-list,
+        .form-select,
+        .btn,
+        .form-control,
+        .nav-link,
+        .dropdown-menu,
+        .choose-skin li div,
+        .choose-skin li.active:after,
+        .avatar,
+        .rounded,.rounded-1,.rounded-2,.rounded-3,.rounded-4,.rounded-pill,
+        .card .card-img-top,
+        .alert,
+        .badge,
+        .input-group-text{
+            border-radius: 0 !important;
+        }
+    }
+    @media only screen and (max-width: $break-xlarge + 160px) {
+        font-size: 15px;
+    }
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    
+    &:hover,
+    &:focus {
+        color: var(--secondary-color);
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+img{
+    filter: saturate(0.5);
+    &:hover{
+        filter: none;
+    }
+}
+
+.page-setting{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    position: fixed;
+    text-align: center;
+    right: 0;
+    top: 150px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    z-index: 999;
+}
+
+.hover-show{
+    &:hover{
+        .hover-div{
+            display: block;
+            z-index: 99;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #000;
+            height: 100%;
+            opacity: 0.5;
+            z-index: 0;
+        }
+        div.small{
+            z-index: 99;
+        }
+    }
+    .hover-div{
+        display: none;
+    }
+}
+
+// header notifications 
+.notifications {
+
+    .pulse,
+    .pulse:focus{
+        color: var(--primary-color) !important;
+    }
+
+    .card{
+        .card-body.tab-content{
+            height: 330px;
+            @media only screen and (max-width: $break-small - 1px) {
+                height: calc(100vh - 200px);
+            }
+        }
+        p{
+            font-weight: 500;
+            span{
+                font-size: 16px;
+            }
+        }
+        span{
+            font-size: 14px;
+            .badge{
+                font-size: 11px;
+            }
+        }
+        a {
+            color: var(--color-600);
+        }
+        small{
+            color: var(--color-400);
+            font-weight: normal;
+            font-size: 12px;
+        }
+    }
+    ul:hover{
+        li{
+            @include transition(ease .2s);
+            opacity: .8;
+        }
+        li:hover{
+            opacity: 1 !important;
+        }
+    }
+    @media only screen and (max-width: $break-small - 1px) {
+        .dropdown-menu{
+            position: fixed;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 55px;
+            .card{
+                width: 100%;
+            }
+        }
+    }
+}
+
+// main header search bar
+.main-search {
+    position: relative;
+    border-color: rgba($white, 0.1) !important;
+
+    .form-control{
+
+        &:focus,
+        &:active{
+            box-shadow: none;
+            color: var(--primary-color);
+
+            &::placeholder{
+                color: rgba($dark, 0.7);
+            }
+        }
+        &::placeholder{
+            color: rgba($dark, 0.4);
+        }
+    }
+    .search-result{
+        position: absolute;
+        width: calc(100% - 30px);
+        top: 40px;
+
+        .dropdown-item{
+            color: var(--color-600);
+
+            &:hover{
+                color: var(--primary-color);
+                background-color: rgba(var(--primary-rgb),.1);
+            }
+        }
+
+        @media only screen and (max-width: $break-medium - 1px) {
+            position: fixed;
+            width: calc(100% - 32px);
+            margin: 0 1rem;
+            top: 68px;
+            left: 0;
+        }
+    }
+}
+
+// header light/dark toggle btn css
+.quick-light-dark{
+    &.active{
+        i{
+            color: var(--secondary-color);
+        }
+    }
+}
+
+// pricing table css
+.pricing-table{
+    .owl-stage{
+        display: flex;
+        align-items: stretch;
+
+        .owl-item{
+            background: var(--card-color);
+            border: 1px dashed var(--border-color);
+            border-radius: .75rem;
+
+            .item{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+        }
+    }
+}
+
+// for card layout height
+.row-deck {
+    >.col,
+    >[class*='col-']{
+        display: flex;
+        align-items: stretch;
+        .card{
+            flex: 1 1 auto;
+        }
+    }
+}
+.row-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    @media only screen and (max-width: $break-small) {
+        flex-direction: column;
+        text-align: center;
+        > div{
+            margin-top: 10px;
+        }
+    }
+}
+
+// fancybox plugin css overwrite
+.fancybox-overlay{ 
+    background-image: url('../plugin/fancybox/source/fancybox_overlay.png');
+}
+#fancybox-loading,
+.fancybox-close,
+.fancybox-prev span,
+.fancybox-next span{
+    background-image: url('../plugin/fancybox/source/fancybox_sprite.png');
+}
+
+
+// Do not add in project
+code{
+    font-size: $font-size;
+}
+:not(pre) > code[class*="language-"],
+pre[class*="language-"]{
+    @include c_overflow(scroll);
+    background: var(--border-color) !important;
+}
+code[class*="language-"],
+pre[class*="language-"]{
+    text-shadow: none !important;
+    color: var(--color-000) !important;
+}
+
+// responsive css
+@media only screen and (max-width: $break-xlarge) {
+    
+}
+@media only screen and (max-width: $break-large) {
+    
+}
+@media only screen and (max-width: $break-medium) {
+    
+}
+@media only screen and (max-width: $break-small - 1px) {
+    .page-toolbar{
+        .row{
+            display: block;
+            .col-auto{
+                margin-top: 20px;
+            }
+        }
+    }
+}

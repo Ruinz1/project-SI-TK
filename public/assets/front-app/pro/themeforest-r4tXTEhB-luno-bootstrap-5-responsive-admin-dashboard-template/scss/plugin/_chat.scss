@@ -1,0 +1,125 @@
+// Admin Layout (LUNO)
+// @author: WrapTheme ( https://themeforest.net/user/wrraptheme )
+// @design by: ThemeMakker Infotech LLP.
+// @event-namespace: LUNO
+// Copyright 2022 WrapTheme
+
+.chat-app{
+
+    .order-1{
+        background: var(--card-color);
+        height: calc(100vh - 77px);
+        min-width: 340px;
+        max-width: 340px;
+        margin-top: 2px;
+        margin-left: 2px;
+
+        .c-list{
+            padding: 14px;
+        }
+
+        .tab-content{
+            height: calc(100vh - 198px);
+            .list-group-item {
+                padding: 0;
+                max-width: 336px;
+
+                > a{
+                    padding: 1rem;    
+                    &.active,
+                    &:hover{
+                        background-color: var(--body-color);
+                    }
+                }
+            }
+
+            h6{
+                color: var(--color-600);
+                font-weight: normal;
+            }
+            span.text-muted{
+                font-size: 14px;
+            }
+            .msg-time{
+                color: var(--color-400);
+                font-size: 11px;
+            }
+        }
+    }
+    .order-2{
+        height: calc(100vh - 77px);
+
+        .chat-header{
+            border-bottom: 1px dashed var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .chat-history{
+            position: relative;
+            height: calc(100vh - 220px);
+
+            .max-width-70{
+                max-width: 70%;
+        
+                @media only screen and (max-width: $break-small) {
+                    max-width: 100%;
+                }
+            }
+            #chat-search{
+                position: sticky;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 9;
+            }
+        }
+        .chat-msg{
+            border-top: 1px dashed var(--border-color);
+            display: flex;
+            align-items: center;
+            
+            > .form-control:focus{
+                border: 0;
+                box-shadow: none;
+            }
+        }
+    }
+
+    @media only screen and (max-width: $break-medium) {
+        .order-1{
+            @include transition(ease .1s);
+            position: fixed;
+            box-shadow: 5px 1rem 1rem rgba($dark,.1);
+            left: -400px;
+            &.open{
+                left: 0;
+                z-index: 99;
+            }
+        }
+        .order-1,
+        .order-2{
+            height: calc(100vh - 69px);
+        }
+    }
+}
+
+[data-theme="high-contrast"] {
+    .chat-app {
+        .order-1 {
+            .tab-content {
+                .list-group-item{
+                    border-width: 0 1px 1px;
+                }
+                .list-group-item>a.active,
+                .list-group-item>a:hover{
+                    background-color: #fff !important;
+                    h6,
+                    .text-muted{
+                        color: #000 !important;
+                    }
+                }
+            }
+        }
+    }
+}

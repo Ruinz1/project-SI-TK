@@ -1,0 +1,264 @@
+// Admin Layout (LUNO)
+// @author: WrapTheme ( https://themeforest.net/user/wrraptheme )
+// @design by: ThemeMakker Infotech LLP.
+// @event-namespace: LUNO
+// Copyright 2022 WrapTheme
+
+// Theme high-contrast color variable
+[data-theme="high-contrast"] {
+	--dark-color: 		#323A45;
+
+	--color-fff:		#000000;
+	--color-100:		#000000;
+	--color-200:		#ffffff;
+	--color-300:		#ffffff;
+	--color-400:		#000000;
+	--color-500:		#ffffff;
+	--color-600:		#ffffff;
+	--color-700:		#ffffff;
+	--color-800:		#ffffff;
+	--color-900:		#ffffff;
+	--color-000:		#ffffff;
+
+	--border-color:		#262727;
+	--card-color: 		#0e0e0e;
+	--body-color: 		#000000;
+	--white-color: 		#ffffff;
+	--black-color: 		#000000;
+	--sidebar-color:	#000000;
+
+	--hc-font-color:	#555555;
+	--hc-bg-color:		#f0f0f0;
+
+    [data-luno="theme-black"] {
+
+        --primary-rgb: 12, 107, 122;
+
+		.btn{
+			&.btn-primary{
+				color: #fff !important;
+			}
+		}
+	}
+
+	[data-luno="theme-blush"] {
+		--body-color: 		#0e0e0e;
+		--card-color: 		#000000;
+	}
+	[data-luno="theme-blue"] {
+		--body-color: 		#0e0e0e;
+	}
+
+	[data-luno="theme-cyan"],
+    [data-luno="theme-blue"],
+    [data-luno="theme-blue"],
+    [data-luno="theme-green"],
+    [data-luno="theme-orange"],
+    [data-luno="theme-blush"],
+    [data-luno="theme-red"] {
+        --primary-color: 	#ffffff;
+        --chart-color1:	 	#f1ff17;
+        --chart-color2: 	#ff745b;
+        --chart-color3: 	#3ce5fb;
+        --chart-color4: 	#17ff17;
+        --chart-color5: 	#eb54ff;
+        --border-color:     #ffffff;
+    }
+
+    .text-danger{
+        color: #ff745b !important;
+    }
+    .text-success{
+        color: #17ff17 !important;
+    }
+    .bg-danger{
+        background-color: #ff745b !important;
+    }
+    .bg-success{
+        background-color: #17ff17 !important;
+    }
+    .btn.btn-outline-danger{
+        color: #ff745b;
+        border-color: #ff745b;
+        &:hover{
+            background-color: #ff745b;
+            color: var(--black-color);
+        }
+    }
+    .btn.btn-outline-success{
+        color: #17ff17;
+        border-color: #17ff17;
+        &:hover{
+            background-color: #17ff17;
+            color: var(--black-color);
+        }
+    }
+
+    .text-muted,
+    .btn-link,
+    .page-item .page-link{
+        color: var(--white-color) !important;
+    }
+    .form-control{
+        &::placeholder{
+            color: var(--white-color) !important;
+        }
+        &:hover{
+            border-color: var(--white-color) !important;
+        }
+    }
+    .form-check-input:checked{
+        background-color: var(--black-color);
+    }
+    .bg-light{
+        color: var(--white-color) !important;
+    }
+    .btn-outline-secondary,
+    .btn.btn-light-primary,
+    .list-group-custom .list-group-item{
+        color: var(--white-color) !important;
+        &:hover{
+            background-color: var(--white-color) !important;
+            color: var(--black-color) !important;
+            .text-primary,
+            .text-muted,
+            .color-800,
+            .fa-star{
+                color: var(--black-color) !important;
+            }
+            .form-check-input{
+                border-color: var(--black-color);
+            }
+        }
+    }
+    .more-icon+.dropdown-menu .dropdown-item:hover,
+    .more-icon+.dropdown-menu .dropdown-item:focus,
+    .more-icon+.dropdown-menu .dropdown-item.active,
+    .dropdown-menu .dropdown-item:hover,
+    .dropdown-menu .dropdown-item:focus,
+    .dropdown-menu .dropdown-item.active{
+        color: var(--black-color) !important;
+        &:hover{
+            background-color: var(--black-color) !important;
+            color: var(--white-color) !important;
+        }
+    }
+    .btn-group .btn-check:checked+.btn-outline-primary,
+    .btn-group .btn-check:active+.btn-outline-primary,
+    .btn-group .btn-outline-primary:active,
+    .btn-group .btn-outline-primary.active,
+    .btn-group .btn-outline-primary.dropdown-toggle.show,
+    .bg-primary,
+    .btn-primary,
+    .bg-dark.text-white,
+    .daterangepicker,
+    .tooltip .tooltip-inner,
+    .nav-tabs.tab-page-toolbar .nav-link.active,
+    .tui-full-calendar-popup-container,
+    .page-item.active .page-link,
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link,
+    .ribbon .option-6,
+    .ribbon .option-7,
+    .ribbon .option-8,
+    .ribbon .option-9,
+    .submit-track .date,
+    .resume-box .time,
+    .submit-track .circle,
+    .badge.bg-dark{
+        color: var(--black-color) !important;
+        .card-title{
+            color: var(--black-color) !important;
+        }
+    }
+    .nav-pills.custom-horizontal .nav-link.active{
+        background: var(--white-color) !important;
+        color: var(--black-color) !important;
+    }
+
+    .btn-check:checked+.btn-outline-secondary,
+    .btn-check:active+.btn-outline-secondary,
+    .btn-outline-secondary:active,
+    .btn-outline-secondary.active,
+    .btn-outline-secondary.dropdown-toggle.show{
+        background: var(--white-color) !important;
+        color: var(--black-color) !important;
+        border-color: var(--white-color) !important;
+    }
+    .avatar.bg-light{
+        border:1px solid var(--white-color) ;
+    }
+    .bg-primary-gradient{
+        background: linear-gradient(145deg, var(--body-color), var(--secondary-color)) !important;
+    }
+
+    .tab-card.bg-white{
+        background-color: var(--black-color) !important;
+    }
+    .breadcrumb{
+        background-color: transparent;
+    }
+    .modal {
+        .modal-content {
+            .dropdown-item{
+                color: var(--black-color);
+            }
+        }
+    }
+
+    .chart-color1,
+    .chart-color3,
+    .chart-color4{
+        .fill-white{
+            fill: var(--black-color) !important;
+        }
+    }
+    .sidebar {
+		&.dark{
+            background: var(--black-color) !important;
+			.title-text{
+				color: var(--white-color);
+			}
+            .menu-list {
+                .m-link{
+                    color: var(--white-color) !important;
+                }
+            }
+		}
+	}
+
+    // rtl css
+    .rtl_mode{
+        .sidebar{
+            .menu-list{
+                .sub-menu::before{
+                    right: 16px;
+                }
+                .ms-link::before{
+                    right: -16px;
+                }
+            }
+        }
+    }
+
+	// some spacific class css in " high-contrast theme "
+	.avatar.no-thumbnail{
+		background-color: $dark;
+	}
+	.form-control {
+		&::placeholder{
+			color: var(--white-color);
+		}
+	}
+	.border-dark{
+        border-color: var(--color-200) !important;
+    }
+    
+}
+
+[data-theme="high-contrast"] {
+    pre[class*="language-"] {
+        background: #000000 !important;
+        border: 1px solid;
+    }
+}
